@@ -28,3 +28,4 @@ angular.module('kleinnco', [ngRoute])
 require('./view/home/index.js');
 require('./component/intro');
 require('./component/our-work');
+require('./component/network');
