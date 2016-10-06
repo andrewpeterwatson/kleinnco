@@ -1,4 +1,4 @@
 'use strict';
 
 require('./intro-directive');
-require('./intro.scss');
+require('./_intro.scss');

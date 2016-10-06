@@ -27,3 +27,4 @@ angular.module('kleinnco', [ngRoute])
 // angular controllers
 require('./view/home/index.js');
 require('./component/intro');
+require('./component/our-work');
