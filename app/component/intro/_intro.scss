@@ -30,18 +30,17 @@
  margin-top: -57%;
 }
 .image-container {
-  // height: 500px;
-  width: 500px;
+  height: 700px;
+  width: 100%;
   overflow: hidden;
-  outline: blue 1px solid;
+  outline: black 1px dashed;
 }
 .intro-image {
-  position: absolute;
-  margin-left: -60%;
-  margin-top: -10%;
-  width: 200%;
-  height: 200%;
-  background-image: url('../../assets/images/boat-standin.jpg');
+  width: 250%;
+  height: 250%;
+  margin-top: -36%;
+  margin-left: -89%;
+  // background-image: url('../../assets/images/boat-standin.jpg');
   // outline: 1px green solid;
 }
 .name-container {
