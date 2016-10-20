@@ -32,14 +32,19 @@
 .image-container {
   height: 700px;
   width: 100%;
+  margin-top: 0;
   overflow: hidden;
   outline: black 1px dashed;
 }
+.image-block {
+  margin-left: -300px;
+}
 .intro-image {
-  width: 250%;
-  height: 250%;
-  margin-top: -36%;
-  margin-left: -89%;
+  width: 100%;
+  height: 100%;
+  transition: scale(20);
+  // margin-top: -36%;
+  // margin-left: -89%;
   // background-image: url('../../assets/images/boat-standin.jpg');
   // outline: 1px green solid;
 }
