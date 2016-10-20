@@ -14,40 +14,33 @@ angular.module('kleinnco')
 function OurWorkController(galleryService){
 
   const clients = require('json!../../data/our-work-data.json')
-  this.currentGalleryIdx = 2;
-
+  this.currentGalleryIdx = 0;
   this.currentClientName = clients;
   this.currentClientWork = clients;
+  this.Microsoft = true;
+  this.Amazon = false
+  this.Netflix = false
+
 
   this.cycleGalleryBack = function() {
+    this[this.currentClientName[this.currentGalleryIdx].name] = false;
     galleryService.cycleBackward(this.currentGalleryIdx);
     this.currentGalleryIdx = galleryService.galleryIndex
+    this[this.currentClientName[this.currentGalleryIdx].name] = true;
   }
 
   this.cycleGallerForward = function() {
+    this[this.currentClientName[this.currentGalleryIdx].name] = false;
     galleryService.cycleForward(this.currentGalleryIdx, clients.length);
     this.currentGalleryIdx = galleryService.galleryIndex;
+    this[this.currentClientName[this.currentGalleryIdx].name] = true
   }
+
+this.testToggle = function(){
+  this.currentPosition = !this.currentPosition;
+}
+
 
 
 }
 });
-
-
-
-
-// function BrewGalleryController(brewMethodGalleryService, userSelectionsService){
-//
-//     this.brewMethods = require('json!../../assets/brew-method-data/brew-methods.json');
-//     this.galleryIndex = 0;
-//     this.currentBrewMethod = userSelectionsService.userSelections.methodId;
-//
-//     this.stepForward = function() {
-//       brewMethodGalleryService.cycleForward(this.galleryIndex, this.brewMethods[userSelectionsService.userSelections.methodId].length);
-//       this.galleryIndex = brewMethodGalleryService.galleryIndex;
-//     };
-//     this.stepBackward = function(){
-//       brewMethodGalleryService.cycleBackward(this.galleryIndex);
-//       this.galleryIndex = brewMethodGalleryService.galleryIndex;
-//     };
-//   }

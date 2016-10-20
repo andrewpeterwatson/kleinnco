@@ -6,9 +6,9 @@ angular.module('kleinnco').factory('galleryService', [galleryService]);
 
 function galleryService(){
   let service = {};
-  service.galleryIndex = 2;
+  service.galleryIndex = 0;
 
-  service.cycleForward = function(galleryIndex, galleryLength){
+  service.cycleForward = function(galleryIndex, galleryLength, ){
     if(service.galleryIndex === galleryLength - 1) {
       return service.galleryIndex;
     }
