@@ -1,3 +1,14 @@
 <div class="our-work">
 <h3>Work goes here</h3>
+<button type="button" name="back-button" id="cycle-back" ng-click="ourWorkCtrl.cycleGalleryBack()"><</button>
+<button type="button" name="forward-button" id="cycle-forward" ng-click="ourWorkCtrl.cycleGallerForward()">></button>
+<h2>{{ourWorkCtrl.currentClientName[ourWorkCtrl.currentGalleryIdx].name}}</h2>
+<h3>{{ourWorkCtrl.currentClientName[ourWorkCtrl.currentGalleryIdx].work}}</h3>
+
+<ol>
+    <li ng-repeat="clients in ourWorkCtrl.currentClientName" ng-class="ourWorkCtrl.{{clients.name}}? 'fa fa-dot-circle-o' : 'fa fa-circle-thin'" id="{{clients.name}}"></li>
+</ol>
+
+
+
 </div>

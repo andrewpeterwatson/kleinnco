@@ -23,7 +23,7 @@ angular.module('kleinnco', [ngRoute])
 }]);
 
 // angular services
-
+require('./service/client-gallery-service')
 // angular controllers
 require('./view/home/index.js');
 require('./component/intro');
