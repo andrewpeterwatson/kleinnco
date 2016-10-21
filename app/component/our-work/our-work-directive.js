@@ -23,7 +23,7 @@ angular.module('kleinnco')
 
     this.cycleGalleryBack = function() {
       this[this.currentClient[this.currentGalleryIdx].name] = false;
-      galleryService.cycleBackward(this.currentGalleryIdx);
+      galleryService.cycleBackward(this.currentGalleryIdx, clients.length);
       this.currentGalleryIdx = galleryService.galleryIndex;
       this[this.currentClient[this.currentGalleryIdx].name] = true;
     };

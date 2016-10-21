@@ -1,0 +1,62 @@
+.nav-bar {
+  margin: 0;
+  padding: 0;
+  position: fixed;
+  display: inline-block;
+  height: 100px;
+  width: 100%;
+  background-color: rgba(0, 0, 0, 0.75);
+  outline: 1px black dashed;
+}
+
+
+.nav-els {
+  margin: 0;
+  padding: 0;
+  display: inline-block;
+  height: 100%;
+  color: lightgrey;
+}
+
+.nav-logo {
+  float: left;
+  color: white;
+  width: 25%;
+  height: 50px;
+  margin-left: 1%;
+  margin-top: 2%;
+  text-align: center;
+  outline: 1px solid blue;
+
+  p {
+    margin-top: -200%;
+  }
+}
+
+.we-do {
+  float: right;
+  width: 110px;
+  height: 35px;
+  text-align: center;
+  margin-right: 2%;
+  margin-top: 3%;
+  outline: 1px solid yellow;
+
+  p {
+    margin-top: 6%;
+  }
+}
+
+.lets-talk {
+  float: right;
+  width: 110px;
+  height: 35px;
+  text-align: center;
+  margin-right: 2%;
+  margin-top: 3%;
+  outline: 1px solid green;
+
+  p {
+    margin-top: 6%;
+  }
+}
