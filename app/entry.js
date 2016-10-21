@@ -23,9 +23,10 @@ angular.module('kleinnco', [ngRoute])
 }]);
 
 // angular services
-require('./service/client-gallery-service')
+require('./service/client-gallery-service');
 // angular controllers
 require('./view/home/index.js');
+require('./component/nav');
 require('./component/intro');
 require('./component/our-work');
 require('./component/network');
