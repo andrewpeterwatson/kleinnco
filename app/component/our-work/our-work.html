@@ -1,12 +1,15 @@
 <div class="our-work">
-<h3>Work goes here</h3>
-<button type="button" name="back-button" id="cycle-back" ng-click="ourWorkCtrl.cycleGalleryBack()"><</button>
-<button type="button" name="forward-button" id="cycle-forward" ng-click="ourWorkCtrl.cycleGallerForward()">></button>
-<h2>{{ourWorkCtrl.currentClientName[ourWorkCtrl.currentGalleryIdx].name}}</h2>
-<h3>{{ourWorkCtrl.currentClientName[ourWorkCtrl.currentGalleryIdx].work}}</h3>
 
-<ol>
-    <li ng-repeat="clients in ourWorkCtrl.currentClientName" ng-class="ourWorkCtrl.{{clients.name}}? 'fa fa-dot-circle-o' : 'fa fa-circle-thin'" id="{{clients.name}}"></li>
+<button type="button" name="back-button" class="work-cycle" id="cycle-back" ng-click="ourWorkCtrl.cycleGalleryBack()"><</button>
+<button type="button" name="forward-button" class="work-cycle" id="cycle-forward" ng-click="ourWorkCtrl.cycleGallerForward()">></button>
+
+<h2 id="work-client-name">{{ourWorkCtrl.currentClient[ourWorkCtrl.currentGalleryIdx].name}}</h2>
+<h3 id="work-client-work">{{ourWorkCtrl.currentClient[ourWorkCtrl.currentGalleryIdx].work}}</h3>
+<h1 id="work-client-link"><a href="#">{{ourWorkCtrl.currentClient[ourWorkCtrl.currentGalleryIdx].webLink}}</a></h1>
+
+
+<ol class="work-gallery-indicators">
+    <li ng-repeat="clients in ourWorkCtrl.currentClient" class="indicator-els" ng-class="ourWorkCtrl.{{clients.name}}? 'fa fa-dot-circle-o' : 'fa fa-circle-thin'" id="{{clients.name}}"></li>
 </ol>
 
 
