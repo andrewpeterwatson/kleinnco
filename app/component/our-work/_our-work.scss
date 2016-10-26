@@ -41,6 +41,19 @@
 
 }
 
+.work-client-container {
+  position: absolute;
+  height: 100%;
+  width: 400%;
+  outline: 1px red solid;
+}
+.work-client-info {
+  display: inline-block;
+  width: 25%;
+  height: 100%;
+  outline: 1px yellow dashed;
+}
+
 #cycle-forward{
   margin-left: 90%;
 }
