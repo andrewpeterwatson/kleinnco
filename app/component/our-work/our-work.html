@@ -2,9 +2,13 @@
 <button type="button" name="back-button" class="work-cycle" id="cycle-back" ng-click="ourWorkCtrl.cycleGalleryBack()"><</button>
 <button type="button" name="forward-button" class="work-cycle" id="cycle-forward" ng-click="ourWorkCtrl.cycleGallerForward()">></button>
 
-<h2 id="work-client-name">{{ourWorkCtrl.currentClient[ourWorkCtrl.currentGalleryIdx].name}}</h2>
-<h3 id="work-client-work">{{ourWorkCtrl.currentClient[ourWorkCtrl.currentGalleryIdx].work}}</h3>
-<h1 id="work-client-link"><a href="#">{{ourWorkCtrl.currentClient[ourWorkCtrl.currentGalleryIdx].webLink}}</a></h1>
+<ol>
+  <li ng-repeat="client in ourWorkCtrl.currentClient">
+    <h2 id="work-client-name">{{client.name}}</h2>
+    <h3 id="work-client-work">{{client.work}}</h3>
+    <h1 id="work-client-link"><a href="#">{{client.webLink}}</a></h1>
+  </li>
+</ol>
 
 
 <ol class="work-gallery-indicators">
