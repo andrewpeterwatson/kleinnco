@@ -1,20 +1,35 @@
 <div class="our-work" id="our-work-tag">
-<button type="button" name="back-button" class="work-cycle" id="cycle-back" ng-click="ourWorkCtrl.cycleGalleryBack()"><</button>
-<button type="button" name="forward-button" class="work-cycle" id="cycle-forward" ng-click="ourWorkCtrl.cycleGallerForward()">></button>
+<!-- <button type="button" name="back-button" class="work-cycle" id="cycle-back" ng-click="ourWorkCtrl.cycleGalleryBack()"><</button>
+<button type="button" name="forward-button" class="work-cycle" id="cycle-forward" ng-click="ourWorkCtrl.cycleGallerForward()">></button> -->
 
+
+
+
+
+<p class="work-cycle" id="cycle-backward" ng-click="ourWorkCtrl.prevSlide()"p>
+<p class="work-cycle" id="cycle-forward" ng-click="ourWorkCtrl.nextSlide()">></p>
+<div class="work-client-container">
+  <ol>
+    <li ng-repeat="client in ourWorkCtrl.currentClient" ng-hide="!ourWorkCtrl.isCurrentSlideIndex($index)" class="work-client-info">
+      <h2 id="work-client-name">{{client.name}}</h2>
+      <h3 id="work-client-work">{{client.work}}</h3>
+      <h1 id="work-client-link"><a href="#">{{client.webLink}}</a></h1>
+    </li>
+  </ol>
+
+
+  <ol class="work-gallery-indicators">
+    <li ng-repeat="clients in ourWorkCtrl.currentClient" class="indicator-els" ng-class="ourWorkCtrl.{{clients.name}}? 'fa fa-dot-circle-o' : 'fa fa-circle-thin'" id="{{clients.name}}"></li>
+  </ol>
+</div>
+
+<!-- <div class="test-div">
+<h3>i am test</h3>
 <ol>
-  <li ng-repeat="client in ourWorkCtrl.currentClient">
-    <h2 id="work-client-name">{{client.name}}</h2>
-    <h3 id="work-client-work">{{client.work}}</h3>
-    <h1 id="work-client-link"><a href="#">{{client.webLink}}</a></h1>
+  <li ng-repeat="client in ourWorkCtrl.currentClient" ng-hide="!ourWorkCtrl.isCurrentSlideIndex($index)" class="test-client">
+    <h2 id="test-client-id">{{client.name}}</h2>
   </li>
 </ol>
-
-
-<ol class="work-gallery-indicators">
-    <li ng-repeat="clients in ourWorkCtrl.currentClient" class="indicator-els" ng-class="ourWorkCtrl.{{clients.name}}? 'fa fa-dot-circle-o' : 'fa fa-circle-thin'" id="{{clients.name}}"></li>
-</ol>
-
-
+</div> -->
 
 </div>
