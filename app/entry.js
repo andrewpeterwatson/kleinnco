@@ -32,3 +32,4 @@ require('./component/our-work');
 require('./component/network');
 require('./component/info');
 require('./component/contact');
+require('./component/our-work/our-work-controller')

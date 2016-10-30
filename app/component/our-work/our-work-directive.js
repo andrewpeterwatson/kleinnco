@@ -31,13 +31,18 @@ angular.module('kleinnco')
     };
 
 
-    this.prevSlide = function () {
-      this.currentIndex = (this.currentIndex < this.currentClient.length - 1) ? ++this.currentIndex : 0;
-    };
-    this.nextSlide = function () {
-      console.log('next clicked');
+    this.prevSlide = function() {
+      console.log('pre hit');
       this.currentIndex = (this.currentIndex > 0) ? --this.currentIndex : this.currentClient.length - 1;
     };
+    this.nextSlide = function() {
+      console.log('next clicked');
+      this.currentIndex = (this.currentIndex < this.currentClient.length - 1) ? ++this.currentIndex : 0;
+    };
+
+    this.testClick = function(){
+      console.log('test hit');
+    }
 
     // this.cycleGalleryBack = function() {
     //   this[this.currentClient[this.currentGalleryIdx].name] = false;
@@ -58,4 +63,4 @@ angular.module('kleinnco')
 
 
   }
-});
+})
