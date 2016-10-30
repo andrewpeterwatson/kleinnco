@@ -6,19 +6,15 @@ angular.module('kleinnco')
   return {
     restrict: 'E',
     template: require('./our-work.html'),
-    controller: ['galleryService', OurWorkController],
+    controller: [OurWorkController],
     controllerAs: 'ourWorkCtrl',
     scope: {}
   };
 
-  function OurWorkController(galleryService){
+  function OurWorkController() {
 
     const clients = require('json!../../data/our-work-data.json');
-    // this.currentGalleryIdx = 0;
     this.currentClient = clients;
-    // this.Microsoft = true;
-    // this.Amazon = false;
-    // this.Netflix = false;
 
     this.currentIndex = 0;
 
@@ -32,35 +28,10 @@ angular.module('kleinnco')
 
 
     this.prevSlide = function() {
-      console.log('pre hit');
       this.currentIndex = (this.currentIndex > 0) ? --this.currentIndex : this.currentClient.length - 1;
     };
     this.nextSlide = function() {
-      console.log('next clicked');
       this.currentIndex = (this.currentIndex < this.currentClient.length - 1) ? ++this.currentIndex : 0;
     };
-
-    this.testClick = function(){
-      console.log('test hit');
-    }
-
-    // this.cycleGalleryBack = function() {
-    //   this[this.currentClient[this.currentGalleryIdx].name] = false;
-    //   galleryService.cycleBackward(this.currentGalleryIdx, clients.length);
-    //   this.currentGalleryIdx = galleryService.galleryIndex;
-    //   this[this.currentClient[this.currentGalleryIdx].name] = true;
-    // };
-    //
-    // this.cycleGallerForward = function() {
-    //   this[this.currentClient[this.currentGalleryIdx].name] = false;
-    //   galleryService.cycleForward(this.currentGalleryIdx, clients.length);
-    //   this.currentGalleryIdx = galleryService.galleryIndex;
-    //   this[this.currentClient[this.currentGalleryIdx].name] = true;
-    // };
-
-
-
-
-
   }
 })
