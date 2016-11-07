@@ -3,21 +3,38 @@
 const angular = require('angular');
 
 angular.module('kleinnco', ['ngAnimate'])
-    .controller('OurWorkController', function () {
-})
-.animation('.slide-animation', function () {
+    .controller('OurWorkController', function() {
+      })
+
+
+    .animation('.slide-animation', function () {
         return {
-            addClass: function (element, className, done) {
+            beforeAddClass: function (element, className, done) {
+                var scope = element.scope();
+
                 if (className == 'ng-hide') {
-                    TweenMax.to(element, 0.5, {left: -element.parent().width(), onComplete: done });
+                    var finishPoint = element.parent().width();
+                    if(scope.direction !== 'right') {
+                        finishPoint = -finishPoint;
+                    }
+                    TweenMax.to(element, 0.5, {left: finishPoint, onComplete: done });
                 }
                 else {
                     done();
                 }
             },
             removeClass: function (element, className, done) {
+                var scope = element.scope();
+
                 if (className == 'ng-hide') {
-                    // ANIMATION CODE GOES HERE
+                    element.removeClass('ng-hide');
+
+                    var startPoint = element.parent().width();
+                    if(scope.direction === 'right') {
+                        startPoint = -startPoint;
+                    }
+
+                    TweenMax.fromTo(element, 0.5, { left: startPoint }, {left: 0, onComplete: done });
                 }
                 else {
                     done();

@@ -15,7 +15,7 @@ angular.module('kleinnco', [ngRoute])
   .when('/home', {
     template: require('./view/home/home.html'),
     controller: 'HomeController',
-    controllerAs: 'homeCrtl'
+    controllerAs: 'homeCtrl'
   })
   .otherwise({
     redirectTo: '/home'
@@ -31,3 +31,4 @@ require('./component/our-work');
 require('./component/network');
 require('./component/info');
 require('./component/contact');
+require('./component/buzz-words')
