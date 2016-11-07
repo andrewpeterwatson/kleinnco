@@ -1,18 +1,28 @@
 [
   {
-  "name":  "Microsoft",
-  "work": "Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla   pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.",
+  "name":  "Novartis Diagnostics",
+  "work": "Novartis hired us to create the sales materials for a global product launch. In less than 6 weeks, we developed & produced a highly segmented positioning & messaging matrix and all of the sales collateral required to support the launch….all while learning about and working within the legal restrictions of the medical diagnostics industry.",
   "webLink": "microsoft.com"
   },
 
   {
-    "name": "Amazon",
-    "work": "Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla  pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.",
+    "name": "Microsoft",
+    "work": "The CVP of the Microsoft Advertising & Online division needed help managing internal events. Klein & Co turned a typical quarterly all-hands meeting into an engaging & interactive talk-show style event: A&O Live. Taped in studio and produced like a TV show, A&O Live changed the way the global team engaged with leadership and contributed to the organization.",
     "webLink": "amazon.com"
   },
   {
-    "name": "Netflix",
-    "work": "Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.",
+    "name": "Oakland Unified School District",
+    "work": "We were hired to author & design the first Annual Report for the 3 rd largest public school district in California – the challenge was no one had access to the brand assets - so in parallel to developing the report, we rebranded the district’s visual identity: logo, palette, photography.",
+    "webLink": "netflix.com"
+  },
+  {
+    "name": "Neos-SDI",
+    "work": "A European-based technical consulting company, Neos-SDI hired Klein & Co to position them within - and develop marketing assets for - the U.S. market. In under two months we researched, drafted & tested positioning while translating their entire website from French to English.",
+    "webLink": "netflix.com"
+  },
+  {
+    "name": "The Bill & Melinda Gates Foundation",
+    "work": "Internal technology advisors hired Klein & Co to help build, nurture & manage a community of executive-level, external technologists who would volunteer their expertise to the Foundation. As networking & community-building specialists, we helped recruit & engage hundreds of global leaders in a breadth of technology segments to support the work of program officers within the foundation.",
     "webLink": "netflix.com"
   }
 ]
