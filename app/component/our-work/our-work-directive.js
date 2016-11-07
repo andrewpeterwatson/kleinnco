@@ -6,19 +6,16 @@ angular.module('kleinnco')
   return {
     restrict: 'E',
     template: require('./our-work.html'),
-    controller: ['galleryService', OurWorkController],
+    controller: [OurWorkController],
     controllerAs: 'ourWorkCtrl',
+    bindToController: true,
     scope: {}
   };
 
-  function OurWorkController(galleryService){
+  function OurWorkController() {
 
     const clients = require('json!../../data/our-work-data.json');
-    // this.currentGalleryIdx = 0;
     this.currentClient = clients;
-    // this.Microsoft = true;
-    // this.Amazon = false;
-    // this.Netflix = false;
 
     this.currentIndex = 0;
 
@@ -31,31 +28,47 @@ angular.module('kleinnco')
     };
 
 
-    this.prevSlide = function () {
-      this.currentIndex = (this.currentIndex < this.currentClient.length - 1) ? ++this.currentIndex : 0;
-    };
-    this.nextSlide = function () {
-      console.log('next clicked');
+    this.prevSlide = function() {
       this.currentIndex = (this.currentIndex > 0) ? --this.currentIndex : this.currentClient.length - 1;
     };
-
-    // this.cycleGalleryBack = function() {
-    //   this[this.currentClient[this.currentGalleryIdx].name] = false;
-    //   galleryService.cycleBackward(this.currentGalleryIdx, clients.length);
-    //   this.currentGalleryIdx = galleryService.galleryIndex;
-    //   this[this.currentClient[this.currentGalleryIdx].name] = true;
-    // };
-    //
-    // this.cycleGallerForward = function() {
-    //   this[this.currentClient[this.currentGalleryIdx].name] = false;
-    //   galleryService.cycleForward(this.currentGalleryIdx, clients.length);
-    //   this.currentGalleryIdx = galleryService.galleryIndex;
-    //   this[this.currentClient[this.currentGalleryIdx].name] = true;
-    // };
-
-
-
-
-
+    this.nextSlide = function() {
+      this.currentIndex = (this.currentIndex < this.currentClient.length - 1) ? ++this.currentIndex : 0;
+    };
   }
-});
+}
+)
+// .animation('.slide-animation', function () {
+//     return {
+//         beforeAddClass: function (element, className, done) {
+//             var scope = element.scope();
+//
+//             if (className == 'ng-hide') {
+//                 var finishPoint = element.parent().width();
+//                 if(scope.direction !== 'right') {
+//                     finishPoint = -finishPoint;
+//                 }
+//                 TweenMax.to(element, 0.5, {left: finishPoint, onComplete: done });
+//             }
+//             else {
+//                 done();
+//             }
+//         },
+//         removeClass: function (element, className, done) {
+//             var scope = element.scope();
+//
+//             if (className == 'ng-hide') {
+//                 element.removeClass('ng-hide');
+//
+//                 var startPoint = element.parent().width();
+//                 if(scope.direction === 'right') {
+//                     startPoint = -startPoint;
+//                 }
+//
+//                 TweenMax.fromTo(element, 0.5, { left: startPoint }, {left: 0, onComplete: done });
+//             }
+//             else {
+//                 done();
+//             }
+//         }
+//     };
+// });
