@@ -1,21 +1,24 @@
 .buzz-words {
   float: left;
-  height: 100%;
+  height: 70%;
   width: 100%;
+  outline: red 1px solid;
 }
 
 
 .bW-containers {
   margin: 0;
   padding: 0;
-  height: 80%;
-  width: 24%;
-  font-size: 8em;
+  height: 9%;
+  width: 14%;
+  margin-top: 10%;
+  margin-left: 9%;
+  font-size: 2.6em;
   display: inline-block;
   text-align: center;
-  outline: red 1px solid;
+  border-bottom: 1px solid black;
 }
 
 #connector {
-  margin-left: 2%;
+  margin-left: 8%;
 }

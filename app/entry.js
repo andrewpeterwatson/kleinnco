@@ -17,6 +17,11 @@ angular.module('kleinnco', [ngRoute])
     controller: 'HomeController',
     controllerAs: 'homeCtrl'
   })
+  .when('/about', {
+    template: require('./view/about-page/about-page.html'),
+    controller: 'AboutPageController',
+    controllerAs: 'aboutCtrl'
+  })
   .otherwise({
     redirectTo: '/home'
   });
@@ -25,10 +30,12 @@ angular.module('kleinnco', [ngRoute])
 // angular services
 // angular controllers
 require('./view/home/index.js');
+require('./view/about-page/index.js')
 require('./component/nav');
 require('./component/intro');
 require('./component/our-work');
 require('./component/network');
 require('./component/info');
 require('./component/contact');
-require('./component/buzz-words')
+require('./component/buzz-words');
+require('./component/quotes')

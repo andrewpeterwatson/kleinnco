@@ -1,7 +1,7 @@
 <nav class="nav-bar">
 
   <div class="nav-els nav-logo">
-    <h2><span id="navKlein">Klein</span> &<span id="navCo">Co</span></h2>
+    <h2 ng-click="navCtrl.goHome()"><span id="navKlein">Klein</span> &<span id="navCo">Co</span></h2>
   </div>
 
 
@@ -10,7 +10,8 @@
     <p>what we do</p>
   </div>
 
-  <div class="nav-els lets-talk">
-    <p>lets talk</p>
-  </div>
+  <!-- <div class="nav-els lets-talk">
+    <p>this is us</p>
+  </div> -->
+  <button class="nav-els lets-talk" ng-click="navCtrl.goAbout()" type="button" name="button">this is us</button>
 </nav>
