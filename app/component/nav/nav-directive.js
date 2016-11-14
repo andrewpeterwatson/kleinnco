@@ -16,7 +16,9 @@ angular.module('kleinnco')
 
 function NavController($location) {
   this.goAbout = function() {
-    console.log('hit about');
     $location.path('/about');
+  }
+  this.goHome = function() {
+    $location.path('/home');
   }
 }
