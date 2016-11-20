@@ -11,8 +11,8 @@ button {
   height: 100px;
   width: 100%;
   z-index: 3;
-  background-color: rgba(0, 0, 0, 0.75);
-  outline: 1px black dashed;
+  // background-color: rgba(0, 0, 0, 0.75);
+  // outline: 1px black dashed;
 }
 
 
@@ -20,14 +20,13 @@ button {
   margin: 0;
   padding: 0;
   display: inline-block;
-  height: 100%;
   color: lightgrey;
 }
 
 .nav-logo {
   float: left;
   color: white;
-  width: 25%;
+  // width: 25%;
   height: 50px;
   margin-left: 1%;
   margin-top: 2%;
@@ -46,7 +45,7 @@ button {
   font-family: 'Italianno', cursive;
 }
 #navCo {
-  font-size: 2em;
+  font-size: 1.8em;
 }
 
 .we-do {
