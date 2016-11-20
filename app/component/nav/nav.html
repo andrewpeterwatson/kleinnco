@@ -1,10 +1,14 @@
 <nav class="nav-bar">
 
-  <div class="nav-els nav-logo">
-    <h2 ng-click="navCtrl.goHome()"><span id="navKlein">Klein</span> &<span id="navCo">Co</span></h2>
+  <div class="nav-logo">
+    <div ng-click="navCtrl.goHome()">
+      <span class="nav-els" id="navKlein">K</span>
+      <span class="nav-els" id="nav-amp">&</span>
+      <span class="nav-els" id="navCo">C</span>
+    </div>
   </div>
 
-
+  <i class="fa fa-bars nav-bars" aria-hidden="true"></i>
 
   <!-- <div class="nav-els we-do">
     <p>what we do</p>

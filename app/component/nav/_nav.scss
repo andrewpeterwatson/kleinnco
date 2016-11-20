@@ -1,3 +1,5 @@
+@import "_theme";
+
 button {
   background-color: transparent;
   border: none;
@@ -15,37 +17,50 @@ button {
   // outline: 1px black dashed;
 }
 
+.nav-bars {
+  color: $app-light;
+  font-size: 2.2em;
+  float: right;
+  margin-top: -12%;
+  margin-right: 6%;
+}
+
 
 .nav-els {
   margin: 0;
   padding: 0;
   display: inline-block;
-  color: lightgrey;
 }
 
 .nav-logo {
   float: left;
   color: white;
-  // width: 25%;
+  width: 100%;
   height: 50px;
-  margin-left: 1%;
-  margin-top: 2%;
-  text-align: center;
+  margin-left: 5%;
+  margin-top: 1%;
+  // text-align: center;
   // outline: 1px solid blue;
 
-  p {
-    margin-top: -200%;
-  }
+
   &:hover {
     cursor: pointer;
   }
 }
 #navKlein {
-  font-size: 2.5em;
+  font-size: 3.5em;
   font-family: 'Italianno', cursive;
 }
 #navCo {
-  font-size: 1.8em;
+  font-size: 2.8em;
+  margin-left: -1%;
+  font-family: 'Cantarell', sans-serif;
+}
+#nav-amp {
+  text-decoration: underline;
+  color: $app-light;
+  font-size: 2.7em;
+  font-style: italic;
 }
 
 .we-do {
