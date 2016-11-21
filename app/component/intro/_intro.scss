@@ -1,22 +1,22 @@
 @import "_theme";
 
 
-@mixin aspect-ratio($width, $height) {
-  position: relative;
-  &:before {
-    display: block;
-    content: "";
-    width: 100%;
-    padding-top: ($height / $width) * 100%;
-  }
-   .content {
-    position: absolute;
-    top: 0;
-    left: 0;
-    right: 0;
-    bottom: 0;
-  }
-}
+// @mixin aspect-ratio($width, $height) {
+//   position: relative;
+//   &:before {
+//     display: block;
+//     content: "";
+//     width: 100%;
+//     padding-top: ($height / $width) * 100%;
+//   }
+//    .content {
+//     position: absolute;
+//     top: 0;
+//     left: 0;
+//     right: 0;
+//     bottom: 0;
+//   }
+// }
 
 
 .intro {
@@ -26,42 +26,29 @@
   width: 100%;
   height: 100%;
   background-color: $app-dark;
-  outline: 1px yellow solid;
+  outline: 10px yellow orange;
 }
-.intro-body-container {
-  position: relative;
- @include aspect-ratio(16, 9);
- margin-top: -57%;
-}
-.image-container {
-  height: 700px;
-  width: 100%;
-  margin-top: 0;
-  overflow: hidden;
-  outline: black 1px dashed;
-}
+
 
 .head-shot-container {
   width: 100%;
-  height: 900px;
+  height: 100%;
   overflow: hidden;
+  outline: 1px solid black;
+
+  // @media only screen and (max-width : 480px) {
+  //   height: 740px;
+  // }
+  // @media only screen and (max-width : 820px) and (min-width: 480px) {
+  //   height: 1028px;
+  // }
 }
 
 .head-shot {
-  width: 100%;
+  // margin-left: -25%;
+  width: 150%;
 }
-.image-block {
-  margin-left: -300px;
-}
-.intro-image {
-  width: 100%;
-  height: 100%;
-  transition: scale(20);
-  // margin-top: -36%;
-  // margin-left: -89%;
-  // background-image: url('../../assets/images/boat-standin.jpg');
-  // outline: 1px green solid;
-}
+
 .name-container {
   position: absolute;
   z-index: 2;
@@ -72,12 +59,71 @@
   width: 100%;
 }
 
-.intro-name-chris {
+.intro-name {
   float: left;
   z-index: 2;
   width: 49%;
   font-size: 8em;
   text-align: center;
   color: white;
+  font-family: 'Italianno', cursive;
+
+  @media only screen and (max-width : 480px) {
+    font-size: 4em;
+  }
+}
+.intro-logo {
+  position: absolute;
+  float: left;
+  margin: 0;
+  padding: 0;
+  color: white;
+  height: 100%;
+  width: 100%;
+  z-index: 2;
+  font-size: 3em;
+  text-align: center;
+  display: list-item;
+  outline: 3px solid green;
+}
+.intro-tagline {
+  position: absolute;
+  float: left;
+  margin: 0;
+  padding: 0;
+  list-style: none;
+  margin-top: 120%;
+  color: $app-light;
+  height: 100%;
+  width: 100%;
+  z-index: 2;
+  font-size: 2em;
+  display: inline-flex;
+
+}
+.intro-logo-els {
+  list-style: none;
+  text-align: left;
+  margin-left: 5%;
+  line-height: 1em;
+}
+.intro-line2 {
+  // margin-top: -5%;
+}
+.intro-co {
+  font-size: 1.8em;
+  font-family: 'Cantarell', sans-serif;
+}
+.intro-amp {
+  text-decoration: underline;
+  color: $app-light;
+  font-size: 1.7em;
+  font-style: italic;
+}
+
+.intro-klein {
+  line-height: 0em;
+  margin-top: 85%;
+  font-size: 2.5em;
   font-family: 'Italianno', cursive;
 }
