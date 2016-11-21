@@ -8,10 +8,24 @@
     </div>
   </div>
 
-  <i class="fa fa-bars nav-bars" aria-hidden="true"></i>
+<div ng-if="navCtrl.showNav" class="nav-container">
 
+  <div class="nav-modal-logo">
+    <div ng-click="navCtrl.goHome()">
+      <span class="nav-els" id="navKlein">K</span>
+      <span class="nav-els" id="nav-amp">&</span>
+      <span class="nav-els" id="navCo">C</span>
+    </div>
+  </div>
+
+  <button class="nav-btns we-are" ng-click="navCtrl.goAbout()" type="button" name="button">this is us</button>
+  <button class="nav-btns" ng-click="navCtrl.goAbout()" type="button" name="button">what we do</button>
+  <button class="nav-btns" ng-click="navCtrl.goAbout()" type="button" name="button">lets talk</button>
+  <div class="close-nav" ng-click="navCtrl.closeNav()"><p>x</p>
+  </div>
+</div>
+<i class="fa fa-bars nav-bars" ng-click="navCtrl.showNav = !navCtrl.showNav" aria-hidden="true"></i>
   <!-- <div class="nav-els we-do">
     <p>what we do</p>
-  </div>
-  <button class="nav-els lets-talk" ng-click="navCtrl.goAbout()" type="button" name="button">this is us</button> -->
+  </div> -->
 </nav>

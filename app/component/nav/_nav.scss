@@ -9,15 +9,15 @@ button {
   margin: 0;
   padding: 0;
   position: fixed;
+  float: right;
   display: inline-block;
-  height: 100px;
+  height: 100%;
   width: 100%;
   z-index: 3;
-  // background-color: rgba(0, 0, 0, 0.75);
-  // outline: 1px black dashed;
 }
 
 .nav-bars {
+  // position: absolute;
   color: $app-light;
   font-size: 2.2em;
   float: right;
@@ -39,6 +39,22 @@ button {
   height: 50px;
   margin-left: 5%;
   margin-top: 1%;
+  // text-align: center;
+  // outline: 1px solid blue;
+
+
+  &:hover {
+    cursor: pointer;
+  }
+}
+
+.nav-modal-logo {
+  float: left;
+  color: white;
+  width: 100%;
+  height: 50px;
+  margin-left: 40%;
+  margin-top: 10%;
   // text-align: center;
   // outline: 1px solid blue;
 
@@ -77,16 +93,60 @@ button {
   }
 }
 
-.lets-talk {
-  float: right;
-  width: 110px;
-  height: 35px;
-  text-align: center;
-  margin-right: 2%;
-  margin-top: 3%;
-  outline: 1px solid green;
-
+.we-are {
+  margin-top: 5%;
   p {
     margin-top: 6%;
   }
 }
+
+.nav-btns {
+  width: 100%;
+  height: 20%;
+  text-align: center;
+  font-size: 3em;
+  color: $app-light;
+  outline: 1px solid $app-dark;
+
+  &:hover {
+    background-color: $app-dark;
+  }
+
+}
+
+
+.nav-container {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  background-color: $app-dark-trans;
+}
+
+.close-nav p {
+  color: $app-light;
+  font-size: 5em;
+  margin-left: 45%;
+  font-family: 'Open Sans Condensed', sans-serif;
+}
+
+// .ham-exit.ng-leave {
+//   animation: my_fade_animation 1s linear;
+//   * {
+//     animation: my_fade_animation 1s linear;
+//   }
+// }
+//
+// .ham-exit.ng-enter {
+//   animation: my_fade_animation .5s linear reverse;
+//   * {
+//     animation: my_fade_animation .5s linear reverse;
+//   }
+// }
+//
+// @keyframes my_fade_animation {
+//   from {
+//     right: 0;
+//   } to {
+//     margin-right: -100%;
+//   }
+// }

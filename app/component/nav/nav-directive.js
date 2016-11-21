@@ -15,10 +15,17 @@ angular.module('kleinnco')
 
 
 function NavController($location) {
+
+  this.showNav = false;
+
   this.goAbout = function() {
+    this.showNav = false;
     $location.path('/about');
-  }
+  };
   this.goHome = function() {
     $location.path('/home');
-  }
+  };
+  this.closeNav = function() {
+    this.showNav = false;
+  };
 }
