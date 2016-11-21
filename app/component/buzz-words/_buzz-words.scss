@@ -1,24 +1,36 @@
+@import "_theme";
+
 .buzz-words {
   float: left;
-  height: 70%;
+  height: 170%;
   width: 100%;
-  outline: red 1px solid;
 }
 
 
 .bW-containers {
   margin: 0;
   padding: 0;
-  height: 9%;
-  width: 14%;
-  margin-top: 10%;
-  margin-left: 9%;
+  height: 33%;
+  width: 100%;
   font-size: 2.6em;
   display: inline-block;
+}
+
+.bw-names {
   text-align: center;
+  width: 50%;
+  height: 15%;
+  margin-left: 26%;
+  margin-top: 10%;
   border-bottom: 1px solid black;
+}
+.bw-desc {
+  font-size: .5em;
+  width: 70%;
+  margin-left: 15%;
+  text-align: center;
 }
 
 #connector {
-  margin-left: 8%;
+  // margin-left: 8%;
 }
