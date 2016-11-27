@@ -69,14 +69,16 @@ button {
 }
 #navCo {
   font-size: 2.8em;
-  margin-left: -1%;
+  margin-left: -2.5%;
   font-family: 'Cantarell', sans-serif;
 }
 #nav-amp {
-  text-decoration: underline;
+  // text-decoration: underline;
   color: $app-light;
-  font-size: 2.7em;
-  font-style: italic;
+  font-size: 2.5em;
+  // font-style: italic;
+  font-family: 'Petit Formal Script', cursive;
+  // font-family: 'Merienda', cursive;
 }
 
 .we-do {
