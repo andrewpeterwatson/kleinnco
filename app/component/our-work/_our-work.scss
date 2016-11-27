@@ -1,8 +1,53 @@
+@import "_theme";
+
 .our-work {
   float: left;
   width: 100%;
-  height: 100%;
-  outline: 1px green solid;
+  height: 125%;
+}
+
+.work-client-name-alone {
+  position: relative;
+  margin: 0;
+  padding: 0;
+  width: 75%;
+  height: 100px;
+  margin-left: 12.5%;
+  margin-top: 10%;
+  font-size: 1.3em;
+  border-bottom: 1px solid $app-light;
+  &:hover {
+    background-color: $app-light;
+  }
+}
+
+.work-hidden {
+  position: absolute;
+  display: none;
+  text-align: center;
+  height: 100px;
+  color: black;
+  font-size: .7em;
+
+  p {
+    margin-top: 5%;
+    margin-left: 20%;
+    width: 58%;
+    text-align: center;
+    color: $app-dark;
+    font-weight: bold;
+  }
+}
+.work-client-name-alone:hover .work-hidden {
+  display:block;
+}
+.work-client-name-alone:hover .work-clients-alone-els {
+  display: none;
+}
+
+.work-clients-alone-els {
+  text-align: center;
+  line-height: 100px;
 }
 
 .work-gallery-position {
@@ -43,13 +88,11 @@
   position: absolute;
   height: 100%;
   width: 100%;
-  outline: 1px red solid;
 }
 .work-client-info {
   display: inline-block;
   width: 100%;
   height: 100%;
-  outline: 1px yellow dashed;
 }
 
 #cycle-forward{
@@ -130,7 +173,13 @@
   margin-left: 10%;
 }
 
-
+.work-gallery-close {
+  text-align: right;
+  margin-right: 6%;
+  margin-top: 2%;
+  color: $app-light;
+  font-size: 3em
+}
 
 
 

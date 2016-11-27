@@ -21,11 +21,18 @@
   color: white;
 }
 
-.quote-header {
+.home-headers {
   position: absolute;
-  margin-top: -16%;
-  width: 50%;
-  font-size: 1.7em;
+  font-size: 4em;
   color: white;
+  font-family: 'Italianno', cursive;
+}
 
+.work-header {
+  margin-top: -20%;
+  margin-left: 40%;
+}
+
+.quote-header {
+  margin-top: -16%;
 }
