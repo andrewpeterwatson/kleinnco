@@ -18,6 +18,7 @@ angular.module('kleinnco')
     this.currentClient = clients;
 
     this.currentIndex = 0;
+    this.showWorkGallery = false;
 
 
     this.setCurrentSlideIndex = function (index) {
@@ -25,6 +26,11 @@ angular.module('kleinnco')
     };
     this.isCurrentSlideIndex = function (index) {
       return this.currentIndex === index;
+    };
+
+    this.showWorkGalleryAt = function(idx) {
+      this.currentIndex = idx;
+      this.showWorkGallery = true;
     };
 
 
@@ -36,4 +42,4 @@ angular.module('kleinnco')
     };
   }
 }
-)
+);
