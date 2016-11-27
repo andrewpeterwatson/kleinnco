@@ -1,3 +1,5 @@
+@import "_theme";
+
 .home-page {
   position: relative;
   margin: 0;
@@ -7,14 +9,23 @@
 }
 
 
-#globe {
+.home-img {
   width: 100%;
 }
 
-#globe-copy {
+.globe-copy {
   position: absolute;
   width: 45%;
   margin-top: -53%;
   margin-left: 50%;
   color: white;
+}
+
+.quote-header {
+  position: absolute;
+  margin-top: -16%;
+  width: 50%;
+  font-size: 1.7em;
+  color: white;
+
 }

@@ -112,13 +112,15 @@
 }
 .intro-co {
   font-size: 1.8em;
+  margin-left: -5%;
   font-family: 'Cantarell', sans-serif;
 }
 .intro-amp {
-  text-decoration: underline;
+  // text-decoration: underline;
   color: $app-light;
-  font-size: 1.7em;
-  font-style: italic;
+  font-size: 1.5em;
+  // font-style: italic;
+  font-family: 'Petit Formal Script', cursive;
 }
 
 .intro-klein {
