@@ -1,19 +1,31 @@
 <main class="home-page">
-  <intro></intro>
-  <info></info>
-  <img class="home-img" src="../../assets/images/working.jpg" alt="working" />
-  <buzz-words></buzz-words>
-  <img class="home-img" src="../../assets/images/globe-pic.jpg" alt="Globe Picture" />
-  <h2 class="work-header home-headers">Our People</h2>
-  <!-- <h2 class="globe-copy">“Klein &amp; Co was instrumental in engaging people in a fun and unusual way, creating an activity for
-people to work on together that helped build community. The overwhelmingly positive comments from
-attendees both night-of and in the following days showed that we really struck a nerve in reaching a
-hard-to- reach audience of women in technology.” – Erin Elsasser, Sr. Recruiter, Microsoft Global Talent
-Acquisition</h2> -->
-  <our-work></our-work>
-  <img class="home-img" src="../../assets/images/wall-pic.jpg" alt="Laughing" />
-  <h2 class="quote-header home-headers">We've heard</h2>
-  <quotes></quotes>
-  <network></network>
+
+  <div class="parallax">
+    <div class="parallax-layer parallax-layer-back">
+      <img class="home-img home-working" src="../../assets/images/working.jpg" alt="working" />
+      <img class="home-img home-globe" src="../../assets/images/globe-pic.jpg" alt="Globe Picture" />
+      <img class="home-img home-wall" src="../../assets/images/wall-pic.jpg" alt="Laughing" />
+    </div>
+    <div class="parallax-layer parallax-layer-base">
+      <intro></intro>
+      <info></info>
+      <div class="home-header-container">
+        <p class="home-values-header">our values</p>
+      </div>
+      <buzz-words></buzz-words>
+      <div class="home-header-container">
+        <p class="home-people-header">our people</p>
+      </div>
+      <our-work></our-work>
+      <div class="home-header-container">
+        <p class="home-quotes-header">our wins</p>
+      </div>
+      <quotes></quotes>
+      <div class="home-header-container">
+        <p>i'm here now</p>
+      </div>
+      <network></network>
+    </div>
+  </div>
   <contact></contact>
 </main>
