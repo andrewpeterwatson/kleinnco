@@ -8,7 +8,7 @@
     </div>
   </div>
 
-<div ng-if="navCtrl.showNav" class="nav-container">
+<div ng-if="navCtrl.showNav" id="openModal" class="nav-container">
 
   <div class="nav-modal-logo">
     <div ng-click="navCtrl.goHome()">
@@ -24,8 +24,5 @@
   <div class="close-nav" ng-click="navCtrl.closeNav()"><p>x</p>
   </div>
 </div>
-<i class="fa fa-bars nav-bars" ng-click="navCtrl.showNav = !navCtrl.showNav" aria-hidden="true"></i>
-  <!-- <div class="nav-els we-do">
-    <p>what we do</p>
-  </div> -->
+<i class="fa fa-bars nav-bars" ng-click="navCtrl.showNav = !navCtrl.showNav" href="#openModal" aria-hidden="true"></i>
 </nav>
