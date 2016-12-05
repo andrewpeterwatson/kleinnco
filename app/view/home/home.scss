@@ -20,6 +20,11 @@
   margin-top: 65%;
   font-size: 5em;
   color: white;
+
+  @media only screen and (min-width : 820px) {
+    margin-top: 25%;
+    font-size: 10em;
+  }
 }
 .home-people-header {
   margin-top: 61%;
@@ -40,11 +45,23 @@
   margin-top: 267%;
   width: 405%;
   margin-left: -156%;
+
+  @media only screen and (min-width : 820px) {
+    margin-top: 78%;
+    width: 220%;
+    margin-left: -50%;
+  }
 }
 .home-globe {
   margin-top: 59%;
   width: 405%;
   margin-left: -156%;
+
+  @media only screen and (min-width : 820px) {
+    margin-top: 78%;
+    width: 220%;
+    margin-left: -50%;
+  }
 }
 .home-wall {
   margin-top: 32%;

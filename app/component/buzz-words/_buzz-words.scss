@@ -15,6 +15,10 @@
   width: 100%;
   font-size: 2.6em;
   display: inline-block;
+
+  @media only screen and (min-width : 820px) {
+    width: 30%;
+  }
 }
 
 .bw-names {
@@ -35,6 +39,6 @@
   color: grey;
 }
 
-#connector {
-  // margin-left: 8%;
+#bw-think {
+  margin-left: 5%;
 }
