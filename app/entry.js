@@ -42,3 +42,4 @@ require('./component/contact');
 require('./component/buzz-words');
 require('./component/quotes');
 require('./component/about-page');
+require('./component/footer');
