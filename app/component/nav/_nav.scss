@@ -109,10 +109,9 @@ button {
   text-align: center;
   font-size: 3em;
   color: $app-light;
-  outline: 1px solid $app-dark;
 
   &:hover {
-    background-color: $app-dark;
+    border: 1px $app-dark solid;
   }
 
 }
@@ -132,25 +131,3 @@ button {
   margin-left: 45%;
   font-family: 'Open Sans Condensed', sans-serif;
 }
-
-// .ham-exit.ng-leave {
-//   animation: my_fade_animation 1s linear;
-//   * {
-//     animation: my_fade_animation 1s linear;
-//   }
-// }
-//
-// .ham-exit.ng-enter {
-//   animation: my_fade_animation .5s linear reverse;
-//   * {
-//     animation: my_fade_animation .5s linear reverse;
-//   }
-// }
-//
-// @keyframes my_fade_animation {
-//   from {
-//     right: 0;
-//   } to {
-//     margin-right: -100%;
-//   }
-// }

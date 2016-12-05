@@ -16,6 +16,10 @@
   text-align: center;
   border-top: 1px solid grey;
   border-bottom: 1px solid grey;
+
+  @media only screen and (min-width : 820px) {
+    margin-top: 10%;
+  }
 }
 
 #info-mission-el {
