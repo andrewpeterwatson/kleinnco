@@ -37,14 +37,15 @@
   // @media only screen and (max-width : 480px) {
   //   height: 740px;
   // }
-  // @media only screen and (max-width : 820px) and (min-width: 480px) {
-  //   height: 1028px;
-  // }
 }
 
 .head-shot {
   // margin-left: -25%;
   width: 150%;
+  @media only screen and (min-width : 820px) {
+    width: 100%;
+    margin-top: -25%;
+  }
 }
 
 .name-container {
@@ -97,12 +98,23 @@
   font-size: 2em;
   display: inline-flex;
 
+  @media only screen and (min-width : 820px) {
+    margin-top: 25%;
+    margin-left: 4%;
+    font-size: 2.3em;
+  }
+
 }
 .intro-logo-els {
   list-style: none;
   text-align: left;
   margin-left: 5%;
   line-height: 1em;
+
+  @media only screen and (min-width : 820px) {
+    line-height: 1.5em;
+  }
+
 }
 .intro-line2 {
   // margin-top: -5%;
@@ -111,6 +123,11 @@
   font-size: 1.8em;
   margin-left: -5%;
   font-family: 'Cantarell', sans-serif;
+  @media only screen and (min-width : 820px) {
+    margin-left: -2%;
+    font-size: 2.5em;
+  }
+
 }
 .intro-amp {
   // text-decoration: underline;
@@ -118,6 +135,11 @@
   font-size: 1.5em;
   // font-style: italic;
   font-family: 'Petit Formal Script', cursive;
+
+  @media only screen and (min-width : 820px) {
+    font-size: 2.2em;
+    margin-left: -2%;
+  }
 }
 
 .intro-klein {
@@ -125,4 +147,9 @@
   margin-top: 85%;
   font-size: 2.5em;
   font-family: 'Italianno', cursive;
+
+  @media only screen and (min-width : 820px) {
+    margin-top: 15%;
+    font-size: 3em;
+  }
 }
