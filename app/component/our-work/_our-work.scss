@@ -18,10 +18,16 @@
   font-size: 1.3em;
   border-bottom: 1px solid $app-light;
   &:hover {
-    background-color: $app-light;
+    outline: $app-light 2px solid;
+    color: $app-dark;
   }
 
+
   @media only screen and (min-width : 820px) {
+    margin: 5%;
+    margin-left: 10%;
+    border: 0;
+    display: inline-block;
     width: 30%;
   }
 }
@@ -43,12 +49,12 @@
     font-weight: bold;
   }
 }
-.work-client-name-alone:hover .work-hidden {
-  display:block;
-}
-.work-client-name-alone:hover .work-clients-alone-els {
-  display: none;
-}
+// .work-client-name-alone:hover .work-hidden {
+//   display:block;
+// }
+// .work-client-name-alone:hover .work-clients-alone-els {
+//   display: none;
+// }
 
 .work-clients-alone-els {
   text-align: center;
@@ -113,16 +119,6 @@
   width: 75%;
   text-align: center;
 
-  // @media only screen and (max-width : 480px) {
-  //   font-size: 2em;
-  //     margin-left: 30%;
-  //     margin-top: 16%;
-  // }
-  // @media only screen and (min-width : 480px) and (max-width : 800px) {
-  //   font-size: 2em;
-  //   margin-left: 28%;
-  //   margin-top: 5%;
-  // }
 }
 
 #work-client-work {
@@ -135,35 +131,8 @@
   line-height: 1.5em;
   border-top: 1px solid lightgrey;
 
-
-  // @media only screen and (max-width : 480px) {
-  //   margin-left: 20%;
-  //   width: 60%;
-  //   font-size: 1em;
-  // }
-  // @media only screen and (min-width : 480px) and (max-width : 800px) {
-  //   margin-left: 18%;
-  //   width: 60%;
-  //   font-size: 1em;
-  // }
 }
 
-// #work-client-link a{
-//   margin-left: 43%;
-//   text-align: center;
-//   text-decoration: none;
-//   font-size: .7em;
-//   color: rgb(231, 130, 107);
-//
-//   @media only screen and (max-width : 480px) {
-//     margin-left: 38%;
-//     font-size: .4em;
-//   }
-//   @media only screen and (min-width : 480px) and (max-width : 800px) {
-//     margin-left: 42%;
-//     font-size: .4em;
-//   }
-// }
 
 .work-gallery-indicators {
   padding: 0;
@@ -186,21 +155,3 @@
   color: $app-light;
   font-size: 3em
 }
-
-
-
-// @media (min-device-width : 320px) and (max-device-width : 480px) {
-//   h2{
-//     background-color: red;
-//   }
-// }
-//
-// /* Smartphones (landscape) ----------- */
-// @media only screen and (min-width : 321px) {
-// /* Styles */
-// }
-//
-// /* Smartphones (portrait) ----------- */
-// @media only screen and (max-width : 320px) {
-// /* Styles */
-// }
