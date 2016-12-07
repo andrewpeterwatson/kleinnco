@@ -21,18 +21,24 @@
 
 .home-nav-btn {
   position: absolute;
-  width: 80px;
-  color: $app-light;
-  margin-left: 50%;
-  font-size: 2em;
+  width: 100%;
+  color: white;
+  font-size: 1.8em;
   z-index: 5;
 }
 
 #nav-values {
-  margin-left: 50%;
+  margin-left: 65%;
 }
 #nav-clients {
-  margin-left: 58%;
+  width: 100px;
+  margin-left: 72%;
+}
+#nav-wins {
+  margin-left: 82%;
+}
+#nav-about {
+  margin-left: 90%;
 }
 
 
