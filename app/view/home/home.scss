@@ -1,5 +1,6 @@
 @import "_theme";
 
+
 .home-page {
   position: relative;
   margin: 0;
@@ -15,6 +16,34 @@
   height: 50%;
   width: 100%;
 }
+
+
+
+.home-nav-btn {
+  position: absolute;
+  width: 100%;
+  color: white;
+  font-size: 1.8em;
+  z-index: 5;
+}
+
+#nav-values {
+  margin-left: 65%;
+}
+#nav-clients {
+  width: 100px;
+  margin-left: 72%;
+}
+#nav-wins {
+  margin-left: 82%;
+}
+#nav-about {
+  margin-left: 90%;
+}
+
+
+
+
 
 .home-values-header {
   margin-top: 65%;
@@ -88,6 +117,7 @@
   height: 100vh;
   overflow-x: hidden;
   overflow-y: auto;
+  background-color: $app-light;
 }
 
 .parallax-layer {
