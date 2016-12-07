@@ -1,5 +1,6 @@
 @import "_theme";
 
+
 .home-page {
   position: relative;
   margin: 0;
@@ -15,6 +16,28 @@
   height: 50%;
   width: 100%;
 }
+
+
+
+.home-nav-btn {
+  position: absolute;
+  width: 80px;
+  color: $app-light;
+  margin-left: 50%;
+  font-size: 2em;
+  z-index: 5;
+}
+
+#nav-values {
+  margin-left: 50%;
+}
+#nav-clients {
+  margin-left: 58%;
+}
+
+
+
+
 
 .home-values-header {
   margin-top: 65%;
