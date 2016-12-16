@@ -13,7 +13,7 @@
   display: inline-block;
   margin: 0;
   padding: 0;
-  height: 50%;
+  height: 459px;
   width: 100%;
 }
 
@@ -25,6 +25,11 @@
   color: white;
   font-size: 1.8em;
   z-index: 5;
+}
+
+.home-bg-placeholder {
+  width: 100%;
+  height: 100%;
 }
 
 #nav-values {
@@ -51,7 +56,7 @@
   color: white;
 
   @media only screen and (min-width : 820px) {
-    margin-top: 25%;
+    margin-top: 301px;
     font-size: 10em;
   }
 }
@@ -61,8 +66,9 @@
   font-size: 5em;
   color: white;
   @media only screen and (min-width : 820px) {
-    margin-top: 25%;
-    margin-left: 55%;
+    margin-top: 303px;
+    float: right;
+    margin-right: 1%;
     font-size: 10em;
   }
 }
@@ -71,34 +77,82 @@
   font-size: 5em;
   color: white;
   @media only screen and (min-width : 820px) {
-    margin-top: 25%;
+    margin-top: 301px;
     font-size: 10em;
   }
 }
 
 .home-img {
-  width: 100%;
-}
-.home-working {
-  margin-top: 267%;
-  width: 405%;
-  margin-left: -156%;
+  width: 256%;
+  margin-left: -51%;
+  overflow: hidden;
 
-  @media only screen and (min-width : 820px) {
-    margin-top: 72%;
-    width: 220%;
-    margin-left: -50%;
+  @media only screen and (min-width : 1535px) {
+    height: 1428px;
   }
 }
-.home-globe {
-  margin-top: 59%;
+
+.home-img-working {
+  height: 1466px;
+
+  @media only screen and (min-width : 1345px) {
+    height: 1445px;
+  }
+
+  @media only screen and (min-width : 1535px) {
+    height: 1452px;
+  }
+}
+
+.home-img-globe {
+  height: 1483px;
+  margin-top: -3%;
+
+  @media only screen and (min-width : 1345px) {
+    // height: 1445px;
+      height: 1513px;
+  }
+
+  @media only screen and (min-width : 1535px) {
+    height: 1528px;
+  }
+}
+
+.home-img-wall {
+  height: 1466px;
+
+  @media only screen and (min-width : 1345px) {
+    height: 1445px;
+  }
+
+  @media only screen and (min-width : 1535px) {
+    height: 1428px;
+    margin-top: 0%
+  }
+}
+
+.home-working {
+  margin-top: 245%;
   width: 405%;
   margin-left: -156%;
 
   @media only screen and (min-width : 820px) {
-    margin-top: -51%;
-    width: 200%;
-    margin-left: -50%;
+    margin-top: 0%;
+    width: 105%;
+    margin-left: 0;
+  }
+}
+
+
+.home-globe {
+  margin-top: -24%;
+  width: 405%;
+  margin-left: -156%;
+
+  @media only screen and (min-width : 820px) {
+    margin-top: 1%;
+    width: 110%;
+    margin-left: 0%;
   }
 }
 .home-wall {
@@ -106,11 +160,20 @@
   width: 405%;
   margin-left: -156%;
   @media only screen and (min-width : 820px) {
-    margin-top: -30%;
-    width: 200%;
-    margin-left: -50%;
+    margin-top: 0%;
+    width: 115%;
+    margin-left: 0%;
+  }
+
+}
+
+.home-wall-img {
+  @media only screen and (min-width : 1535px) {
+    margin-top: 1%;
   }
 }
+
+// header containers need fixed heights
 
 .parallax {
   perspective: 1px;

@@ -7,7 +7,7 @@
       <p class="work-clients-alone-els">
         Novartis Diagnostics
       </p>
-  
+
     </div>
     <div class="work-client-name-alone" ng-click="ourWorkCtrl.showWorkGalleryAt(1)">
       <p class="work-clients-alone-els">
@@ -39,7 +39,7 @@
   <p class="work-cycle" id="cycle-forward" ng-click="ourWorkCtrl.nextSlide()">></p>
   <p class="work-cycle" id="cycle-backward" ng-click="ourWorkCtrl.prevSlide()"><</p>
   <div class="work-client-container">
-    <ol>
+    <ol id="work-info-ol">
       <li ng-repeat="client in ourWorkCtrl.currentClient" ng-hide="!ourWorkCtrl.isCurrentSlideIndex($index)" class="work-client-info slide-animation">
         <h2 id="work-client-name">{{client.name}}</h2>
         <h3 id="work-client-work">{{client.work}}</h3>
