@@ -93,6 +93,17 @@
     margin-top: 21%;
   }
 
+  @media only screen and (min-width : 820px) {
+    margin-top: 300px;
+  }
+
+}
+
+#work-info-ol {
+  padding: 0;
+  @media only screen and (min-width : 820px) {
+    margin-left: 10%;
+  }
 }
 
 .work-client-container {
@@ -114,11 +125,17 @@
 #work-client-name {
   font-size: 2em;
   margin-left: 12%;
-  margin-top: 16%;
+  margin-top: 130px;
   height: 65px;
   width: 75%;
   text-align: center;
 
+
+  @media only screen and (min-width : 820px) {
+    margin-top: 50px;
+    height: 108px;
+    font-size: 4em;
+  }
 }
 
 #work-client-work {
@@ -129,7 +146,13 @@
   color: grey;
   text-align: center;
   line-height: 1.5em;
+  font-style: italic;
   border-top: 1px solid lightgrey;
+
+  @media only screen and (min-width : 820px) {
+    height: 280px;
+    font-size: 2em;
+  }
 
 }
 
