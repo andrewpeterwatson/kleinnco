@@ -15,7 +15,8 @@
 .bW-containers {
   margin: 0;
   padding: 0;
-  height: 15%;
+  float: left;
+  height: 333px;
   width: 100%;
   font-size: 2.6em;
   display: inline-flex;
@@ -28,8 +29,9 @@
 
 .bw-names {
   text-align: center;
-  width: 50%;
-  height: 55%;
+  width: 155px;
+  float: left;
+  height: 52px;
   margin-left: 26%;
   margin-top: 15px;
   border-bottom: 1px solid grey;
@@ -42,8 +44,9 @@
 .bw-desc {
   font-size: .5em;
   width: 70%;
-  margin-left: 15%;
-  margin-top: 130px;
+  height: 151px;
+  margin-left: -60%;
+  margin-top: 76px;
   text-align: center;
   font-style: italic;
   color: grey;
