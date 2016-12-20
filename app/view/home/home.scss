@@ -6,7 +6,7 @@
   margin: 0;
   float: left;
   padding: 0;
-  width: 100%;
+  width: 102%;
   height: 100%;
 }
 .home-header-container {
@@ -48,13 +48,18 @@
 }
 
 .nav-bars {
-  color: #cff7fa;
+  position: fixed;
   font-size: 2.2em;
   width: 100%;
-  margin-top: 4%;
-  margin-left: 85%;
-  position: fixed;
+  height: 50px;
+  margin-top: 5px;
+  text-align: right;
+  margin-left: 0%;
   z-index: 2;
+
+  i {
+    margin-right: 30px;
+  }
 }
 
 
@@ -132,8 +137,8 @@
 }
 
 .home-img {
-  width: 200%;
-  margin-left: -51%;
+  width: 100%;
+  margin-top: -168px;
   overflow: hidden;
 
   @media only screen and (min-width : 1535px) {
@@ -142,7 +147,7 @@
 }
 
 .home-img-working {
-  height: 1466px;
+  // height: 1466px;
 
   @media only screen and (min-width : 1345px) {
     height: 1445px;
@@ -181,9 +186,14 @@
 }
 
 .home-working {
-  margin-top: 217px;
-  width: 1900px;
-  margin-left: -117%;
+  height: 700px;
+  float: right;
+  margin-right: -240px;
+  margin-top: 0;
+
+  @media only screen and (max-width : 350px) {
+    margin-top: 22%;
+  }
 
   @media only screen and (min-width : 820px) {
     margin-top: 0%;
@@ -245,5 +255,6 @@
   transform: translateZ(0);
 }
 .parallax-layer-back {
-  transform: translateZ(-1px);
+  margin-left: -1%;
+  transform: translateZ(-1px) scale(2);
 }
