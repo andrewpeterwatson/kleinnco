@@ -1,12 +1,12 @@
 <nav class="nav-bar">
 
-  <div class="nav-logo">
+  <!-- <div class="nav-logo">
     <div ng-click="navCtrl.goHome()">
       <span class="nav-els" id="navKlein">K</span>
       <span class="nav-els" id="nav-amp">&</span>
       <span class="nav-els" id="navCo">CO</span>
     </div>
-  </div>
+  </div> -->
 
 <div ng-if="navCtrl.showNav" id="openModal" class="nav-container">
 
@@ -18,9 +18,10 @@
     </div>
   </div>
 
-  <button class="nav-btns we-are" ng-click="navCtrl.goAbout()" type="button" name="button">this is us</button>
-  <button class="nav-btns" ng-click="navCtrl.goAbout()" type="button" name="button">what we do</button>
-  <button class="nav-btns" ng-click="navCtrl.goAbout()" type="button" name="button">lets talk</button>
+  <button class="nav-btns we-are" ng-click="navCtrl.goAbout()" type="button" name="button">values</button>
+  <button class="nav-btns" ng-click="navCtrl.goAbout()" type="button" name="button">our clients</button>
+  <button class="nav-btns" ng-click="navCtrl.goAbout()" type="button" name="button">wins</button>
+  <button class="nav-btns" ng-click="navCtrl.goAbout()" type="button" name="button">meet</button>
   <div class="close-nav" ng-click="navCtrl.closeNav()"><p>x</p>
   </div>
 </div>

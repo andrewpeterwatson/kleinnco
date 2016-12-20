@@ -8,6 +8,8 @@ button {
 .nav-bar {
   margin: 0;
   padding: 0;
+  height: 100%;
+  width: 100%;
   position: fixed;
   z-index: 3;
 }
@@ -17,8 +19,8 @@ button {
   color: $app-light;
   font-size: 2.2em;
   float: right;
-  margin-top: 10%;
-  margin-right: -105%;
+  margin-top: 5%;
+  margin-right: 5%;
 
   @media only screen and (min-width : 820px) {
     display: none;
@@ -105,10 +107,11 @@ button {
 
 .nav-btns {
   width: 100%;
-  height: 20%;
-  text-align: center;
-  font-size: 3em;
-  color: $app-light;
+  height: 73px;
+  text-align: left;
+  margin-left: 20px;
+  font-size: 2em;
+  color: black;
 
   &:hover {
     border: 1px $app-dark solid;
@@ -119,16 +122,17 @@ button {
 
 .nav-container {
   position: absolute;
-  width: 279%;
-  height: 1111%;
+  width: 100%;
+  height: 100%;
+  margin-left: 50%;
   display: hidden;
-  background-color: $app-dark-trans;
+  background-color: white;
 
 }
 
 .close-nav p {
-  color: $app-light;
-  font-size: 5em;
-  margin-left: 45%;
+  color: black;
+  font-size: 3em;
+  margin-left: 30px;
   font-family: 'Open Sans Condensed', sans-serif;
 }

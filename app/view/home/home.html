@@ -1,5 +1,18 @@
 <main class="home-page">
 
+<div class="nav-bars">
+  <i class="fa fa-bars" ng-click="homeCtrl.showNav = !homeCtrl.showNav" href="#openModal" aria-hidden="true"></i>
+</div>
+  <div class="home-mobile-nav" ng-if="homeCtrl.showNav">
+    <button id="nav-mobile-values" class="home-nav-mobile-btn" type="button" name="button"><a href="#values" target="_self">values</a></button>
+    <button id="nav-mobile-clients" class="home-nav-mobile-btn" type="button" name="button"><a href="#clients" target="_self">our clients</a></button>
+    <button id="nav-mobile-wins" class="home-nav-mobile-btn" type="button" name="button"><a href="#wins" target="_self">wins</a></button>
+    <button id="nav-mobile-about" class="home-nav-mobile-btn" type="button" name="button"><a href="#/about">meet us</a></button>
+
+      <div class="close-nav" ng-click="homeCtrl.closeNav()"><p>x</p></div>
+  </div>
+
+
   <div class="parallax">
     <div class="parallax-layer parallax-layer-back">
       <div class="home-bg-placeholder"></div>
@@ -16,11 +29,14 @@
 
 
     <div class="parallax-layer parallax-layer-base">
+        <div class="home-desk-nav">
+          <a href="#values" target="_self" id="nav-values" class="home-nav-btn">values</a>
+          <a href="#clients" target="_self" id="nav-clients" class="home-nav-btn">our clients</a>
+          <a href="#wins" target="_self" id="nav-wins" class="home-nav-btn">wins</a>
+          <a href="#/about"  id="nav-about" class="home-nav-btn">meet us</a>
+        </div>
 
-        <a href="#values" target="_self" id="nav-values" class="home-nav-btn">values</a>
-        <a href="#clients" target="_self" id="nav-clients" class="home-nav-btn">our clients</a>
-        <a href="#wins" target="_self" id="nav-wins" class="home-nav-btn">wins</a>
-        <a href="#/about"  id="nav-about" class="home-nav-btn">meet us</a>
+
 
       <intro></intro>
       <info id="home-info"></info>

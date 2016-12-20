@@ -6,7 +6,7 @@
   margin: 0;
   float: left;
   padding: 0;
-  width: 100%;
+  width: 102%;
   height: 100%;
 }
 .home-header-container {
@@ -17,6 +17,51 @@
   width: 100%;
 }
 
+.home-mobile-nav {
+  position: fixed;
+  height: 100%;
+  width: 100%;
+  margin-left: 50%;
+  z-index: 2;
+  background-color: white;
+}
+
+.close-nav p {
+  color: black;
+  font-size: 3em;
+  margin-left: 30px;
+  font-family: 'Open Sans Condensed', sans-serif;
+}
+
+
+.home-nav-mobile-btn {
+  width: 100%;
+  height: 73px;
+  text-align: left;
+  margin-left: 20px;
+  font-size: 2em;
+  color: black;
+
+  a {
+    color: black;
+  }
+}
+
+.nav-bars {
+  position: fixed;
+  font-size: 2.2em;
+  width: 100%;
+  height: 50px;
+  margin-top: 5px;
+  text-align: right;
+  margin-left: 0%;
+  z-index: 2;
+
+  i {
+    margin-right: 30px;
+  }
+}
+
 
 
 .home-nav-btn {
@@ -25,6 +70,7 @@
   color: white;
   font-size: 1.8em;
   z-index: 5;
+
 }
 
 .home-bg-placeholder {
@@ -51,7 +97,7 @@
 
 
 .home-values-header {
-  margin-top: 65%;
+  margin-top: 379px;
   font-size: 5em;
   color: white;
 
@@ -60,9 +106,17 @@
     font-size: 10em;
   }
 }
+
+.home-desk-nav {
+
+  @media only screen and (max-width : 820px) {
+  display: none;
+  }
+}
 .home-people-header {
-  margin-top: 61%;
-  margin-left: 22%;
+  margin-top: 379px;
+  float: right;
+  margin-right: 5px;
   font-size: 5em;
   color: white;
   @media only screen and (min-width : 820px) {
@@ -73,7 +127,7 @@
   }
 }
 .home-quotes-header {
-  margin-top: 65%;
+  margin-top: 379px;
   font-size: 5em;
   color: white;
   @media only screen and (min-width : 820px) {
@@ -83,8 +137,8 @@
 }
 
 .home-img {
-  width: 256%;
-  margin-left: -51%;
+  width: 100%;
+  margin-top: -168px;
   overflow: hidden;
 
   @media only screen and (min-width : 1535px) {
@@ -93,7 +147,7 @@
 }
 
 .home-img-working {
-  height: 1466px;
+  // height: 1466px;
 
   @media only screen and (min-width : 1345px) {
     height: 1445px;
@@ -132,9 +186,14 @@
 }
 
 .home-working {
-  margin-top: 245%;
-  width: 405%;
-  margin-left: -156%;
+  height: 700px;
+  float: right;
+  margin-right: -240px;
+  margin-top: 0;
+
+  @media only screen and (max-width : 350px) {
+    margin-top: 22%;
+  }
 
   @media only screen and (min-width : 820px) {
     margin-top: 0%;
@@ -176,6 +235,7 @@
 // header containers need fixed heights
 
 .parallax {
+  width: 100%;
   perspective: 1px;
   height: 100vh;
   overflow-x: hidden;
@@ -195,5 +255,6 @@
   transform: translateZ(0);
 }
 .parallax-layer-back {
-  transform: translateZ(-1px);
+  margin-left: -1%;
+  transform: translateZ(-1px) scale(2);
 }
