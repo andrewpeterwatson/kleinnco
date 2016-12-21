@@ -138,7 +138,8 @@
 
 .home-img {
   width: 100%;
-  margin-top: -168px;
+  height: 735px;
+  margin-top: -238px;
   overflow: hidden;
 
   @media only screen and (min-width : 1535px) {
@@ -174,6 +175,7 @@
 
 .home-img-wall {
   height: 1466px;
+  margin-top: -624px;
 
   @media only screen and (min-width : 1345px) {
     height: 1445px;
@@ -186,7 +188,7 @@
 }
 
 .home-working {
-  height: 700px;
+  height: 710px;
   float: right;
   margin-right: -240px;
   margin-top: 0;
@@ -204,9 +206,10 @@
 
 
 .home-globe {
-  margin-top: -24%;
-  width: 405%;
-  margin-left: -156%;
+  margin-top: 129px;
+  width: 273%;
+  margin-left: -59%;
+
 
   @media only screen and (min-width : 820px) {
     margin-top: 1%;
@@ -215,9 +218,8 @@
   }
 }
 .home-wall {
-  margin-top: 32%;
-  width: 405%;
-  margin-left: -156%;
+  width: 273%;
+  margin-left: 0;
   @media only screen and (min-width : 820px) {
     margin-top: 0%;
     width: 115%;

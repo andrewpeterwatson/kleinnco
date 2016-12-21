@@ -28,9 +28,9 @@
 }
 
 .bw-names {
+  position: absolute;
   text-align: center;
   width: 155px;
-  float: left;
   height: 52px;
   margin-left: 26%;
   margin-top: 15px;
@@ -42,10 +42,11 @@
   }
 }
 .bw-desc {
+  position: absolute;
   font-size: .5em;
   width: 70%;
   height: 151px;
-  margin-left: -60%;
+  margin-left: 13%;
   margin-top: 76px;
   text-align: center;
   font-style: italic;
