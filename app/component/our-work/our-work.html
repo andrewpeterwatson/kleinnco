@@ -4,30 +4,19 @@
 
 <div class="work-clients-container" ng-show="!ourWorkCtrl.showWorkGallery">
     <div class="work-client-name-alone" ng-click="ourWorkCtrl.showWorkGalleryAt(0)">
-      <p class="work-clients-alone-els">
-        Novartis Diagnostics
-      </p>
-
+      <img class="work-clients-alone-els" src="../../assets/logos/novartis-black.png" alt="Novartis" />
     </div>
     <div class="work-client-name-alone" ng-click="ourWorkCtrl.showWorkGalleryAt(1)">
-      <p class="work-clients-alone-els">
-        Microsoft
-      </p>
+      <img class="work-clients-alone-els" src="../../assets/logos/microsoft-black.png" alt="Microsoft" />
     </div>
     <div class="work-client-name-alone">
-      <p class="work-clients-alone-els" ng-click="ourWorkCtrl.showWorkGalleryAt(2)">
-        Oakland Unified School District
-      </p>
+      <img class="work-clients-alone-els" src="../../assets/logos/ousd-black.png" alt="Oakland Unified School District" />
     </div>
     <div class="work-client-name-alone" ng-click="ourWorkCtrl.showWorkGalleryAt(3)">
-      <p class="work-clients-alone-els">
-        Neos-SDI
-      </p>
+      <img class="work-clients-alone-els" src="../../assets/logos/neos-sdi-black.png" alt="Neos-SDI" />
     </div>
     <div class="work-client-name-alone" ng-click="ourWorkCtrl.showWorkGalleryAt(4)">
-      <p class="work-clients-alone-els">
-        The Bill & Melinda Gates Foundation
-      </p>
+      <img class="work-clients-alone-els" src="../../assets/logos/gates-black.png" alt="Bill and Melinda Gates Foundation" />
 </div>
 </div>
 
@@ -41,7 +30,14 @@
   <div class="work-client-container">
     <ol id="work-info-ol">
       <li ng-repeat="client in ourWorkCtrl.currentClient" ng-hide="!ourWorkCtrl.isCurrentSlideIndex($index)" class="work-client-info slide-animation">
-        <h2 id="work-client-name">{{client.name}}</h2>
+        <img src="../../assets/logos/gates-black.png" alt="this one" />
+
+        <img class="work-clients-alone-els" ng-src="{{ourWorkCtrl.testImg}}" alt="Novartis" />
+        <!-- <img class="work-clients-alone-els" ng-show="ourWorkCtrl.currentIndex === 1" src="../../assets/logos/microsoft-black.png" alt="Microsoft" />
+        <img class="work-clients-alone-els" ng-show="ourWorkCtrl.currentIndex === 2" src="../../assets/logos/ousd-black.png" alt="Oakland Unified School District" />
+        <img class="work-clients-alone-els" ng-show="ourWorkCtrl.currentIndex === 3" src="../../assets/logos/neos-sdi-black.png" alt="Neos-SDI" />
+        <img class="work-clients-alone-els" ng-show="ourWorkCtrl.currentIndex === 4" src="../../assets/logos/gates-black.png" alt="Bill and Melinda Gates Foundation" /> -->
+
         <h3 id="work-client-work">{{client.work}}</h3>
         <!-- <h1 id="work-client-link"><a href="#">{{client.webLink}}</a></h1> -->
       </li>
