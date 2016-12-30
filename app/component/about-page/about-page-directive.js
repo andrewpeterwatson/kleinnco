@@ -5,7 +5,7 @@ angular.module('kleinnco')
 .directive('aboutPage', function(){
   return {
     template: require('./about-page.html'),
-    scope: {}
+    scope: {},
     controller: ['$location', AboutPageController],
     controllerAs: 'aboutCtrl',
     bindToController: true
