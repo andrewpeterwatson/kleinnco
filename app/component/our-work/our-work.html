@@ -31,8 +31,8 @@
     <ol id="work-info-ol">
       <li ng-repeat="client in ourWorkCtrl.currentClient" ng-hide="!ourWorkCtrl.isCurrentSlideIndex($index)" class="work-client-info slide-animation">
         <img src="../../assets/logos/gates-black.png" alt="this one" />
+        <img ng-src="{{ourWorkCtrl.testImg}}" alt="" />
 
-        <img class="work-clients-alone-els" ng-src="{{ourWorkCtrl.testImg}}" alt="Novartis" />
         <!-- <img class="work-clients-alone-els" ng-show="ourWorkCtrl.currentIndex === 1" src="../../assets/logos/microsoft-black.png" alt="Microsoft" />
         <img class="work-clients-alone-els" ng-show="ourWorkCtrl.currentIndex === 2" src="../../assets/logos/ousd-black.png" alt="Oakland Unified School District" />
         <img class="work-clients-alone-els" ng-show="ourWorkCtrl.currentIndex === 3" src="../../assets/logos/neos-sdi-black.png" alt="Neos-SDI" />
