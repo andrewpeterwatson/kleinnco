@@ -38,14 +38,55 @@
   //   height: 740px;
   // }
 }
+.background-container {
+  position: absolute;
+  margin: 0;
+  padding: 0;
+  width: 100%;
+  height: 100%;
+  overflow: hidden;
+  background-color: $app-light;
+}
+
+.kleinco-logo {
+  margin: 0 auto;;
+  // margin-left: auto;
+  // margin-right: auto;
+  margin-top: 5%;
+  display: block;
+  width: 700px;
+  height: 70%;
+}
+
+.logo-els {
+  margin: 0 auto;
+  margin-left: auto;
+  margin-right: auto;
+  display: block;
+  // width: 700px;
+}
+
+.tagline {
+  width: 100%;
+}
+.tagline-els {
+  margin-top: 20%;
+}
+
+.tagline-table {
+  margin: 0 auto;
+  margin-left: auto;
+  margin-right: auto;
+  display: block;
+  width: 700px;
+}
+#tagline-think {
+  margin-left: -35%;
+}
 
 .head-shot {
-  // margin-left: -25%;
-  width: 150%;
-  @media only screen and (min-width : 820px) {
-    width: 100%;
-    margin-top: -25%;
-  }
+min-width: 100%;
+min-height: 100%;
 }
 
 .name-container {
@@ -56,6 +97,15 @@
   margin-top: 25%;
   padding: 0;
   width: 100%;
+}
+
+
+
+.intro-cover-color {
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  background-color: rgba(26, 155, 165, 0.66);
 }
 
 .intro-name {
@@ -74,12 +124,11 @@
 
 .intro-logo-full {
   position: absolute;
-    margin: 0;
-    padding: 0;
-    width: 300px;
-    height: 300px;
-    margin-top: 15%;
-    // outline: 1px red solid;
+  margin: 0;
+  padding: 0;
+  height: 110px;
+  bottom: 0;
+  margin-bottom: 8%;
 }
 
 .intro-logo {
@@ -97,22 +146,18 @@
   display: list-item;
 }
 .intro-tagline {
-  // position: absolute;
-  // float: left;
   margin: 0;
   padding: 0;
+  margin-top: -67px;
+  margin-left: 12%;
   list-style: none;
-  // margin-top: 120%;
   color: $app-light;
-  // height: 10%;
-  // width: 100%;
   z-index: 2;
   font-size: 2em;
   display: inline-flex;
 
   @media only screen and (min-width : 820px) {
     // margin-top: 25%;
-    margin-left: 4%;
     font-size: 2.3em;
   }
 

@@ -10,7 +10,13 @@
 
 .about-img-container {
   width: 100%;
-  height: 40%;
+  height: 480px;
+  overflow: hidden;
+
+@media only screen and (min-width : 820px) {
+
+  }
+
 }
 
 .about-body-container {
@@ -23,5 +29,26 @@
 
   p {
     margin-top: 10%;
+
+    @media only screen and (min-width : 820px) {
+      font-size: 1.3em;
+    }
   }
+}
+
+
+.about-quote {
+  @media only screen and (min-width : 820px) {
+    font-size: 4em;
+  }
+}
+
+.about-klein-logo {
+  position: absolute;
+  margin: 0 auto;
+  padding: 0;
+  width: 150px;
+  margin-top: 1%;
+  margin-left: 1%;
+
 }
