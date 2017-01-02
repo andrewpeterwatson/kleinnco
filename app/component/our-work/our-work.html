@@ -9,7 +9,7 @@
     <div class="work-client-name-alone" ng-click="ourWorkCtrl.showWorkGalleryAt(1)">
       <img class="work-clients-alone-els" src="../../assets/logos/microsoft-black.png" alt="Microsoft" />
     </div>
-    <div class="work-client-name-alone">
+    <div class="work-client-name-alone" ng-click="ourWorkCtrl.showWorkGalleryAt(2)">
       <img class="work-clients-alone-els" src="../../assets/logos/ousd-black.png" alt="Oakland Unified School District" />
     </div>
     <div class="work-client-name-alone" ng-click="ourWorkCtrl.showWorkGalleryAt(3)">
@@ -18,6 +18,10 @@
     <div class="work-client-name-alone" ng-click="ourWorkCtrl.showWorkGalleryAt(4)">
       <img class="work-clients-alone-els" src="../../assets/logos/gates-black.png" alt="Bill and Melinda Gates Foundation" />
 </div>
+<img ng-src="{{ourWorkCtrl.imagePath}}" alt="make it happen" />
+<p>
+  {{ourWorkCtrl.testImg}}
+</p>
 </div>
 
 
@@ -31,7 +35,7 @@
     <ol id="work-info-ol">
       <li ng-repeat="client in ourWorkCtrl.currentClient" ng-hide="!ourWorkCtrl.isCurrentSlideIndex($index)" class="work-client-info slide-animation">
         <img src="../../assets/logos/gates-black.png" alt="this one" />
-        <img ng-src="{{ourWorkCtrl.testImg}}" alt="" />
+        <img ng-src="{{ourWorkCtrl.testImg}}" alt="make it happen" />
 
         <!-- <img class="work-clients-alone-els" ng-show="ourWorkCtrl.currentIndex === 1" src="../../assets/logos/microsoft-black.png" alt="Microsoft" />
         <img class="work-clients-alone-els" ng-show="ourWorkCtrl.currentIndex === 2" src="../../assets/logos/ousd-black.png" alt="Oakland Unified School District" />
