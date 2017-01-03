@@ -32,4 +32,8 @@
 #info-meet-us {
   z-index: 2;
   color: $app-dark;
+
+  &:hover {
+    cursor: pointer;
+  }
 }
