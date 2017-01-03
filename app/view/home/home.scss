@@ -203,7 +203,7 @@
   margin-top: -624px;
 
   @media only screen and (min-width: 820px) {
-    margin-top: 1261px;
+    margin-top: 1223px;
   }
 
   // @media only screen and (min-width : 1345px) {
@@ -229,30 +229,30 @@
 
   @media only screen and (min-width : 820px) {
     margin-top: 0%;
-    width: 100%;
-    min-height: auto;
-    margin-right: 0;
+    width: 131%;
+    height: auto;
   }
 }
 
 
 .home-globe {
-  margin-top: 129px;
-  width: 273%;
-  margin-left: -59%;
+  // margin-top: 129px;
+  // width: 273%;
+  // margin-left: -59%;
 
 
   @media only screen and (min-width : 820px) {
-    margin-top: 523px;
-    height: 718px;
+    margin-top: 533px;
+    height: auto;
+    width: 145%;
   }
 }
 .home-wall {
   width: 273%;
   margin-left: 0;
   @media only screen and (min-width : 820px) {
-    margin-top: 0%;
-    width: 115%;
+    width: 133%;
+    height: auto;
     margin-left: 0%;
   }
 

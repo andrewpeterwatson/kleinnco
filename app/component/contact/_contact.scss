@@ -18,7 +18,7 @@
   background-color: $app-dark;
 
   @media only screen and (min-width : 820px) {
-    height: 75%;
+    height: 90vh;
   }
 
 }
@@ -33,7 +33,7 @@
 
   @media only screen and (min-width : 820px) {
     font-size: 5em;
-    margin-top: 185px;
+    margin-top: 280px;
   }
 }
 
@@ -139,4 +139,15 @@
   @media only screen and (min-width : 820px) {
     display: inline-flex;
   }
+}
+
+.contact-footer-legal {
+  width: 65%;
+  margin-left: 16%;
+  margin-top: -80px;
+}
+
+#contact-footer-legal-h3 {
+  font-size: .5em;
+  text-align: center;
 }
