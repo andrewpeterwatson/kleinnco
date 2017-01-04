@@ -147,21 +147,24 @@
   @media only screen and (min-width : 820px) {
     margin-top: 301px;
     font-size: 10em;
+    margin-left: 30px;
   }
 }
 
 .home-img {
-  width: 100%;
-  height: 735px;
-  margin-top: -238px;
+
+  width: 102%;
+  height: 739px;
+  margin-top: -240px;
+  margin-left: -2px;
   overflow: hidden;
 
   @media only screen and (min-width : 820px) {
-    position: absolute;
-    display: inline;
+      position: absolute;
+      display: inline;
       height: 735px;
       width: 100%;
-      margin-top: -233px;
+      margin-top: -239px;
     }
 
   @media only screen and (min-width : 1535px) {
@@ -183,9 +186,10 @@
 
 .home-img-globe {
   height: 1483px;
-  margin-top: -3%;
+  margin-top: -8px;
+
   @media only screen and (min-width : 820px) {
-    // margin-top: -81%
+    margin-top: -24px;
   }
 
   // @media only screen and (min-width : 1345px) {
@@ -199,11 +203,12 @@
 }
 
 .home-img-wall {
-  height: 1466px;
-  margin-top: -624px;
+  height: 718px;
+  margin-top: -640px;
+
 
   @media only screen and (min-width: 820px) {
-    margin-top: 1261px;
+    margin-top: 1223px;
   }
 
   // @media only screen and (min-width : 1345px) {
@@ -217,42 +222,47 @@
 }
 
 .home-working {
-  height: 710px;
+  height: auto;
+  width: 324%;
   float: right;
-  margin-right: -240px;
-  margin-top: 0;
+  margin-right: -80%;
+  margin-top: 0px;
 
-  @media only screen and (max-width : 350px) {
-    margin-top: 22%;
-    margin-left: 0;
-  }
+
 
   @media only screen and (min-width : 820px) {
     margin-top: 0%;
-    width: 100%;
-    min-height: auto;
-    margin-right: 0;
+    margin-right: -98px;
+    width: 131%;
+    height: auto;
   }
 }
 
 
 .home-globe {
-  margin-top: 129px;
-  width: 273%;
-  margin-left: -59%;
+  margin-top: 0px;
+  margin-left: -212px;
+  width: 350%;
+  height: auto;
+
+
 
 
   @media only screen and (min-width : 820px) {
-    margin-top: 523px;
-    height: 718px;
+    margin-top: 515px;
+    margin-left: 0;
+    height: auto;
+    width: 145%;
   }
 }
 .home-wall {
   width: 273%;
   margin-left: 0;
+
+
   @media only screen and (min-width : 820px) {
-    margin-top: 0%;
-    width: 115%;
+    width: 133%;
+    height: auto;
     margin-left: 0%;
   }
 

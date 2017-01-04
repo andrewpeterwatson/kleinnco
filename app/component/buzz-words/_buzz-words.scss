@@ -2,8 +2,11 @@
 
 .buzz-words {
   float: left;
+  margin: 0;
+  padding: 0;
   height: 1000px;
-  width: 100%;
+  width: 100vw;
+  display: inline-block;
   background-color: white;
 
   @media only screen and (min-width : 820px) {
@@ -13,51 +16,56 @@
 
 
 .bW-containers {
-  margin: 0;
+  margin: 0 auto;
   padding: 0;
-  float: left;
-  height: 333px;
-  width: 100%;
-  font-size: 2.6em;
-  display: inline-flex;
+  margin-left: 2%;
+  height: 250px;
 
   @media only screen and (min-width : 820px) {
-    width: 30%;
-    margin-top: 8%;
+    width: 100%;
+    display: inline-flex;
   }
 }
 
 .bw-names {
-  position: absolute;
-  text-align: center;
-  width: 155px;
-  height: 52px;
-  margin-left: 26%;
-  margin-top: 15px;
+  margin: 0 auto;
+  margin-left: auto;
+  margin-right: auto;
+  display: block;
+  width: 99px;
+  height: 54px;
+  font-size: 3em;
   border-bottom: 1px solid grey;
 
+  p {
+    text-align: center;
+  }
+
   @media only screen and (min-width : 820px) {
-    font-size: 2em;
-    height: 95px;
+    font-size: 6em;
+    height: 100px;
+    margin: 0 auto;
+    margin-left: auto;
+    margin-right: auto;
+    width: 194px;
   }
 }
 .bw-desc {
   position: absolute;
-  font-size: .5em;
-  width: 70%;
-  height: 151px;
-  margin-left: 13%;
-  margin-top: 76px;
+  font-size: 1.1em;
+  width: 80%;
+  margin-top: 3px;
   text-align: center;
+  margin-left: 10%;
   font-style: italic;
+  text-align: center;
   color: grey;
   @media only screen and (min-width : 820px) {
-    margin-top: 130px;
-    margin-left: -60%;
-    width: 80%;
+    margin-top: 104px;
+    font-size: 1.5em;
   }
 }
 
 #bw-think {
-  margin-left: 3%;
+  // margin-left: 3%;
 }

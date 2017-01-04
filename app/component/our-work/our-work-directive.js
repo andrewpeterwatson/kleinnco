@@ -19,7 +19,10 @@ angular.module('kleinnco')
 
     this.currentIndex = 0;
     this.showWorkGallery = false;
-    this.testImg = 'http://images.askmen.com/1080x540/2015/12/04-031429-instagram_filter_baby_names_are_trending_hard.jpg'
+    this.testImg = 'gates-black'
+
+    this.imagePath = "http://localhost:8080/#/home/app/assets/logos/gates-black.png";
+
 
 
 
