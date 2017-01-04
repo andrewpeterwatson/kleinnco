@@ -40,12 +40,12 @@ angular.module('kleinnco')
     }
 
 
-    // this.prevSlide = function() {
-    //   this.currentIndex = (this.currentIndex > 0) ? --this.currentIndex : this.currentClient.length - 1;
-    // };
-    // this.nextSlide = function() {
-    //   this.currentIndex = (this.currentIndex < this.currentClient.length - 1) ? ++this.currentIndex : 0;
-    // };
+    this.prevSlide = function() {
+      this.currentIndex = (this.currentIndex > 0) ? --this.currentIndex : this.currentClient.length - 1;
+    };
+    this.nextSlide = function() {
+      this.currentIndex = (this.currentIndex < this.currentClient.length - 1) ? ++this.currentIndex : 0;
+    };
   }
 }
 );
