@@ -14,8 +14,8 @@ angular.module('kleinnco')
 
   function OurWorkController() {
 
-    const clients = require('json!../../data/our-work-data.json');
-    this.currentClient = clients;
+    const clientInfo = require('json!../../data/our-work-data.json');
+    this.currentClient = clientInfo;
 
     this.currentIndex = 0;
     this.showWorkGallery = false;
