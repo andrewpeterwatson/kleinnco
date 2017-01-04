@@ -41,12 +41,10 @@ angular.module('kleinnco')
 
 
     this.prevSlide = function() {
-      console.log('prev hit');
-      // this.currentIndex = (this.currentIndex > 0) ? --this.currentIndex : this.currentClient.length - 1;
+      this.currentIndex = (this.currentIndex > 0) ? --this.currentIndex : this.currentClient.length - 1;
     };
     this.nextSlide = function() {
-      console.log('next hit');
-      // this.currentIndex = (this.currentIndex < this.currentClient.length - 1) ? ++this.currentIndex : 0;
+      this.currentIndex = (this.currentIndex < this.currentClient.length - 1) ? ++this.currentIndex : 0;
     };
   }
 }
