@@ -5,7 +5,7 @@ angular.module('kleinnco')
 .directive('ourWork', function(){
   return {
     restrict: 'E',
-    template: require('./our-work.html'),
+    template: require('./_our-work.html'),
     controller: [OurWorkController],
     controllerAs: 'ourWorkCtrl',
     bindToController: true,
