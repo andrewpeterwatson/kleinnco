@@ -15,7 +15,6 @@ function HomeController($log, $location){
   };
 
   this.aboutGo = function() {
-    console.log('hit about');
       $location.path('/about')
   }
 
