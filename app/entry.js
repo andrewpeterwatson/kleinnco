@@ -7,11 +7,10 @@ require('./scss/base.scss');
 // npm modules
 const angular = require('angular');
 const ngRoute = require('angular-route');
-const ngAnimate = require('angular-animate');
 
 
 // angular modules
-angular.module('kleinnco', [ngRoute, ngAnimate])
+angular.module('kleinnco', [ngRoute])
 .config(['$routeProvider', function($routeProvider){
   $routeProvider
   .when('/home', {
@@ -33,10 +32,8 @@ angular.module('kleinnco', [ngRoute, ngAnimate])
 // angular controllers
 require('./view/home/index.js');
 require('./view/about-page/index.js');
-require('./component/nav');
 require('./component/intro');
 require('./component/our-work');
-require('./component/network');
 require('./component/info');
 require('./component/contact');
 require('./component/buzz-words');

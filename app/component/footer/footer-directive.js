@@ -13,9 +13,5 @@ angular.module('kleinnco')
   };
 });
 
-function FooterControler($location){
-  this.meetUs = function(){
-    console.log('hit meetUs');
-    $location.path('/about');
-  };
+function FooterControler(){
 }
