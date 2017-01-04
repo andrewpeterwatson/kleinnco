@@ -90,8 +90,6 @@
 
 
 .home-nav-btn {
-  // position: absolute;
-  // width: 200px;
   color: white;
   font-size: 1.8em;
   z-index: 5;
@@ -102,24 +100,6 @@
   width: 100%;
   height: 100%;
 }
-
-#nav-values {
-  // margin-left: 65%;
-}
-#nav-clients {
-  // width: 100px;
-  // margin-left: 72%;
-}
-#nav-wins {
-  // margin-left: 82%;
-}
-#nav-about {
-  // margin-left: 90%;
-}
-
-
-
-
 
 .home-values-header {
   margin-top: 379px;
@@ -184,15 +164,9 @@
 }
 
 .home-img-working {
-  // height: 1466px;
-
   @media only screen and (min-width : 1345px) {
     height: 1445px;
   }
-
-  // @media only screen and (min-width : 1535px) {
-  //   height: 1452px;
-  // }
 }
 
 .home-img-globe {
@@ -202,15 +176,6 @@
   @media only screen and (min-width : 820px) {
     margin-top: -24px;
   }
-
-  // @media only screen and (min-width : 1345px) {
-  //   // height: 1445px;
-  //     height: 1513px;
-  // }
-  //
-  // @media only screen and (min-width : 1535px) {
-  //   height: 1528px;
-  // }
 }
 
 .home-img-wall {
@@ -221,15 +186,6 @@
   @media only screen and (min-width: 820px) {
     margin-top: 1223px;
   }
-
-  // @media only screen and (min-width : 1345px) {
-  //   height: 1445px;
-  // }
-  //
-  // @media only screen and (min-width : 1535px) {
-  //   height: 1428px;
-  //   margin-top: 0%
-  // }
 }
 
 .home-working {
@@ -284,8 +240,6 @@
     margin-top: 1%;
   }
 }
-
-// header containers need fixed heights
 
 .parallax {
   width: 100%;

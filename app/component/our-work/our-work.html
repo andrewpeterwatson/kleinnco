@@ -1,7 +1,4 @@
 <div class="our-work">
-<!-- <button type="button" name="back-button" class="work-cycle" id="cycle-back" ng-click="ourWorkCtrl.cycleGalleryBack()"><</button>
-<button type="button" name="forward-button" class="work-cycle" id="cycle-forward" ng-click="ourWorkCtrl.cycleGallerForward()">></button> -->
-
 <div class="work-clients-container" ng-show="!ourWorkCtrl.showWorkGallery">
     <div class="work-client-name-alone" ng-click="ourWorkCtrl.showWorkGalleryAt(0)">
       <img class="work-clients-alone-els" src="../../assets/logos/novartis-black.png" alt="Novartis" />
@@ -19,8 +16,6 @@
       <img class="work-clients-alone-els" src="../../assets/logos/gates-black.png" alt="Bill and Melinda Gates Foundation" />
 </div>
 </div>
-
-
 <div class="work-gallery-container" ng-show="ourWorkCtrl.showWorkGallery">
   <p class="work-gallery-close" ng-click="ourWorkCtrl.showWorkGallery = false">
     X
@@ -31,19 +26,8 @@
     <ol id="work-info-ol">
       <li ng-repeat="client in ourWorkCtrl.currentClient" ng-hide="!ourWorkCtrl.isCurrentSlideIndex($index)" class="work-client-info slide-animation">
 
-
-        <!-- <img src="../../assets/logos/gates-black.png" alt="this one" /> -->
-
-
-        <!-- <img ng-src="{{ourWorkCtrl.testImg}}" alt="make it happen" /> -->
-
-        <!-- <img class="work-clients-alone-els" ng-show="ourWorkCtrl.currentIndex === 1" src="../../assets/logos/microsoft-black.png" alt="Microsoft" />
-        <img class="work-clients-alone-els" ng-show="ourWorkCtrl.currentIndex === 2" src="../../assets/logos/ousd-black.png" alt="Oakland Unified School District" />
-        <img class="work-clients-alone-els" ng-show="ourWorkCtrl.currentIndex === 3" src="../../assets/logos/neos-sdi-black.png" alt="Neos-SDI" />
-        <img class="work-clients-alone-els" ng-show="ourWorkCtrl.currentIndex === 4" src="../../assets/logos/gates-black.png" alt="Bill and Melinda Gates Foundation" /> -->
         <h2 id="work-client-name">{{client.name}}</h3>
         <h3 id="work-client-work">{{client.work}}</h3>
-        <!-- <h1 id="work-client-link"><a href="#">{{client.webLink}}</a></h1> -->
       </li>
     </ol>
     <ol class="work-gallery-indicators">
