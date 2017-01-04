@@ -19,9 +19,6 @@ angular.module('kleinnco')
 
     this.currentIndex = 0;
     this.showWorkGallery = false;
-    this.testImg = 'gates-black'
-
-    this.imagePath = "http://localhost:8080/#/home/app/assets/logos/gates-black.png";
 
 
 
