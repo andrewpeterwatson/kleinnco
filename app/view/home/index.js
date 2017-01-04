@@ -6,12 +6,17 @@ const angular = require('angular');
 angular.module('kleinnco')
 .controller('HomeController', ['$log', '$location', HomeController]);
 
-function HomeController(){
+function HomeController($log, $location){
   this.showNav = false;
+
+
   this.closeNav = function() {
     this.showNav = false;
   };
-  this.missionHit = function(){
-    console.log('mission hit');
-  };
+
+  this.aboutGo = function() {
+    console.log('hit about');
+      $location.path('/about')
+  }
+
 }
