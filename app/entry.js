@@ -7,11 +7,10 @@ require('./scss/base.scss');
 // npm modules
 const angular = require('angular');
 const ngRoute = require('angular-route');
-const ngAnimate = require('angular-animate');
 
 
 // angular modules
-angular.module('kleinnco', [ngRoute, ngAnimate])
+angular.module('kleinnco', [ngRoute])
 .config(['$routeProvider', function($routeProvider){
   $routeProvider
   .when('/home', {
