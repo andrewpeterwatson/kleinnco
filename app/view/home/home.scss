@@ -55,6 +55,8 @@
   margin-left: 20px;
   font-size: 2em;
   color: black;
+  border: none;
+  background-color: transparent;
 
   a {
     color: black;
@@ -73,6 +75,15 @@
 
   i {
     margin-right: 30px;
+  }
+}
+
+.fa-bars {
+  color: $app-light;
+
+  @media only screen and (min-width : 820px) {
+    color: white;
+  display: none;
   }
 }
 
