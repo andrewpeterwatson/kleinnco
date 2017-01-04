@@ -18,10 +18,10 @@
     <div class="work-client-name-alone" ng-click="ourWorkCtrl.showWorkGalleryAt(4)">
       <img class="work-clients-alone-els" src="../../assets/logos/gates-black.png" alt="Bill and Melinda Gates Foundation" />
 </div>
-<img ng-src="{{ourWorkCtrl.imagePath}}" alt="make it happen" />
+<!-- <img ng-src="{{ourWorkCtrl.imagePath}}" alt="make it happen" />
 <p>
   {{ourWorkCtrl.testImg}}
-</p>
+</p> -->
 </div>
 
 
@@ -34,14 +34,18 @@
   <div class="work-client-container">
     <ol id="work-info-ol">
       <li ng-repeat="client in ourWorkCtrl.currentClient" ng-hide="!ourWorkCtrl.isCurrentSlideIndex($index)" class="work-client-info slide-animation">
-        <img src="../../assets/logos/gates-black.png" alt="this one" />
-        <img ng-src="{{ourWorkCtrl.testImg}}" alt="make it happen" />
+
+
+        <!-- <img src="../../assets/logos/gates-black.png" alt="this one" /> -->
+
+
+        <!-- <img ng-src="{{ourWorkCtrl.testImg}}" alt="make it happen" /> -->
 
         <!-- <img class="work-clients-alone-els" ng-show="ourWorkCtrl.currentIndex === 1" src="../../assets/logos/microsoft-black.png" alt="Microsoft" />
         <img class="work-clients-alone-els" ng-show="ourWorkCtrl.currentIndex === 2" src="../../assets/logos/ousd-black.png" alt="Oakland Unified School District" />
         <img class="work-clients-alone-els" ng-show="ourWorkCtrl.currentIndex === 3" src="../../assets/logos/neos-sdi-black.png" alt="Neos-SDI" />
         <img class="work-clients-alone-els" ng-show="ourWorkCtrl.currentIndex === 4" src="../../assets/logos/gates-black.png" alt="Bill and Melinda Gates Foundation" /> -->
-
+        <h2 id="work-client-name">{{client.name}}</h3>
         <h3 id="work-client-work">{{client.work}}</h3>
         <!-- <h1 id="work-client-link"><a href="#">{{client.webLink}}</a></h1> -->
       </li>
