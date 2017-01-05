@@ -196,9 +196,9 @@
     color: grey;
   }
 
-  .indicator-conainer {
-    margin-left: -15%;
-  }
+
+
+
 
 
 
@@ -221,3 +221,10 @@
     cursor: pointer;
   }
 }
+
+#indicator-conainer {
+  @media only screen and (min-width : 820px) {
+    margin-left: -15%;
+  }
+
+  }
