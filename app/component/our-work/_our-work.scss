@@ -63,6 +63,10 @@
   margin-top: 5%;
   display: block;
   width: 200px;
+
+  &:hover {
+    cursor: pointer;
+  }
 }
 
 .work-gallery-position {
@@ -83,6 +87,10 @@
   margin-left: 3%;
 
 
+
+  &:hover {
+    cursor: pointer;
+  }
 
   &:focus {
     outline: 0;
@@ -178,6 +186,23 @@
 
 
 
+  @media only screen and (min-width : 820px) {
+    padding: 0;
+    margin: 0 auto;
+    width: 900px;
+    float: none;
+    text-align: center;
+    margin-top: 5%;
+    color: grey;
+  }
+
+  .indicator-conainer {
+    margin-left: -15%;
+  }
+
+
+
+
 }
 .indicator-els {
   padding: 0;
@@ -189,5 +214,10 @@
   margin-right: 6%;
   margin-top: 2%;
   color: $app-light;
-  font-size: 3em
+  font-size: 3em;
+
+
+  &:hover {
+    cursor: pointer;
+  }
 }

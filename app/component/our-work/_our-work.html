@@ -30,9 +30,11 @@
         <h3 id="work-client-work">{{client.work}}</h3>
       </li>
     </ol>
-    <ol class="work-gallery-indicators">
-      <li ng-repeat="clients in ourWorkCtrl.currentClient" class="indicator-els" ng-class="!ourWorkCtrl.isCurrentSlideIndex($index)? 'fa fa-circle-thin' : 'fa fa-dot-circle-o'" id="{{clients.name}}"></li>
-    </ol>
+    <div class="indicator-conainer">
+      <ol class="work-gallery-indicators">
+        <li ng-repeat="clients in ourWorkCtrl.currentClient" class="indicator-els" ng-class="!ourWorkCtrl.isCurrentSlideIndex($index)? 'fa fa-circle-thin' : 'fa fa-dot-circle-o'" id="{{clients.name}}"></li>
+      </ol>
+    </div>
   </div>
 </div>
 </div>
