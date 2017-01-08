@@ -269,3 +269,38 @@
   margin-left: -1%;
   transform: translateZ(-1px) scale(2);
 }
+
+.scroll-down-arrow {
+  position: absolute;
+  bottom: 29px;
+  width: 100vw;
+  height: 41px;
+  z-index: 1;
+}
+.scroll-down-arrow-circle {
+  width: 45px;
+  height: 45px;
+  margin-left: 47vw;
+  border: 2.5px $app-light-trans solid;
+  border-radius: 32px;
+  color: $app-light-trans;
+  z-index: 1;
+  display: inline-block;
+
+  &:hover {
+    border-color: $app-light;
+    color: $app-light;
+  }
+}
+
+.fa-angle-down {
+  font-size: 3em;
+  margin-left: 7px;
+}
+
+#home-scroll {
+  display: inline-block;
+  margin-left: 3px;
+  font-size: 2em;
+  color: $app-light-trans;
+}
