@@ -18,7 +18,7 @@
 .bW-containers {
   margin: 0 auto;
   padding: 0;
-  margin-left: 2%;
+  // margin-left: 2%;
   height: 250px;
 
   @media only screen and (min-width : 820px) {
@@ -53,16 +53,16 @@
 .bw-desc {
   position: absolute;
   font-size: 1.1em;
-  width: 80%;
+  width: 50%;
   margin-top: 3px;
   text-align: center;
-  margin-left: 10%;
+  margin-left: 24.5%;
   font-style: italic;
   text-align: center;
   color: grey;
   @media only screen and (min-width : 820px) {
     margin-top: 104px;
-    font-size: 1.5em;
+    font-size: 1.3em;
   }
 }
 
