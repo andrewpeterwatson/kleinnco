@@ -11,22 +11,27 @@
   position: relative;
   width: 67%;
   margin-left: 16.75%;
-  margin-top: 70px;
-  height: 325px;
+  margin-top: 56px;
+  height: 385px;
   text-align: center;
   border-top: 1px solid grey;
   border-bottom: 1px solid grey;
 
   @media only screen and (min-width : 820px) {
-    // margin-top: 10%;
+    height: 325px;
+    margin-top: 70px;
   }
 }
 
 #info-mission-el {
   // position: absolute;
   font-size: 1.3em;
-  margin-top: 68px;
+  margin-top: 25px;
   font-weight: bold;
+
+  @media only screen and (min-width : 820px) {
+    margin-top: 68px;
+  }
 }
 
 #info-meet-us {
