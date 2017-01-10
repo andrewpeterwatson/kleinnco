@@ -122,9 +122,15 @@
   position: absolute;
   margin: 0;
   padding: 0;
-  height: 110px;
   bottom: 0;
-  margin-bottom: 8%;
+  height: 62px;
+  margin-bottom: 24%;
+
+  @media only screen and (min-width : 820px) {
+    height: 110px;
+    margin-bottom: 10%;
+
+  }
 }
 
 .intro-logo {
@@ -144,7 +150,7 @@
 .intro-tagline {
   margin: 0;
   padding: 0;
-  margin-top: -82px;
+  margin-top: -73px;
   margin-left: 1.5%;
   list-style: none;
   color: $app-light;

@@ -6,6 +6,17 @@
   height: 1000px;
   background-color: white;
 }
+.work-clients-container {
+    @media only screen and (min-width : 820px) {
+      margin-top: 75px;
+    }
+}
+
+.work-gallery-container {
+  @media only screen and (min-width : 820px) {
+    margin-top: 75px;
+  }
+}
 
 .work-client-name-alone {
   position: relative;
@@ -68,6 +79,8 @@
     cursor: pointer;
   }
 }
+
+
 
 .work-gallery-position {
   display: inline-block;

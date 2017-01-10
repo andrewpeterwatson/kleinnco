@@ -272,15 +272,19 @@
 
 .scroll-down-arrow {
   position: absolute;
-  bottom: 29px;
+  bottom: 10px;
   width: 100vw;
   height: 41px;
   z-index: 1;
+
+  @media only screen and (min-width : 820px) {
+    bottom: 29px;
+  }
 }
 .scroll-down-arrow-circle {
   width: 45px;
   height: 45px;
-  margin-left: 47vw;
+  margin-left: 40vw;
   border: 2.5px $app-light-trans solid;
   border-radius: 32px;
   color: $app-light-trans;
@@ -290,6 +294,11 @@
   &:hover {
     border-color: $app-light;
     color: $app-light;
+  }
+
+
+  @media only screen and (min-width : 820px) {
+    margin-left: 47vw;
   }
 }
 
