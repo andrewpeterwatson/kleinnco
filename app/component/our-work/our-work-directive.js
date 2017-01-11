@@ -35,6 +35,10 @@ angular.module('kleinnco')
       this.showWorkGallery = true;
     };
 
+    this.closeGallery = function() {
+      this.showWorkGallery = false;
+    }
+
 
     this.prevSlide = function() {
       this.currentIndex = (this.currentIndex > 0) ? --this.currentIndex : this.currentClient.length - 1;

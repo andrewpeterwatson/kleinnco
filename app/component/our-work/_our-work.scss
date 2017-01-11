@@ -6,6 +6,18 @@
   height: 1000px;
   background-color: white;
 }
+.work-clients-container {
+  margin-top: 90px;
+    @media only screen and (min-width : 820px) {
+      margin-top: 190px;
+    }
+}
+
+.work-gallery-container {
+  @media only screen and (min-width : 820px) {
+    margin-top: 75px;
+  }
+}
 
 .work-client-name-alone {
   position: relative;
@@ -63,7 +75,13 @@
   margin-top: 5%;
   display: block;
   width: 200px;
+
+  &:hover {
+    cursor: pointer;
+  }
 }
+
+
 
 .work-gallery-position {
   display: inline-block;
@@ -76,7 +94,6 @@
 .work-cycle {
   position: absolute;
   z-index: 3;
-  background-color: rgba(255, 255, 255, 0);
   color: lightgrey;
   font-size: 5em;
   border: none;
@@ -84,6 +101,10 @@
   margin-left: 3%;
 
 
+
+  &:hover {
+    cursor: pointer;
+  }
 
   &:focus {
     outline: 0;
@@ -160,7 +181,6 @@
   color: grey;
   text-align: center;
   line-height: 1.5em;
-  font-style: italic;
   border-top: 1px solid lightgrey;
 
   @media only screen and (min-width : 820px) {
@@ -179,6 +199,15 @@
 
 
 
+  @media only screen and (min-width : 820px) {
+    padding: 0;
+    margin: 0 auto;
+    width: 900px;
+    float: none;
+    text-align: center;
+    margin-top: 5%;
+    color: grey;
+  }
 }
 .indicator-els {
   padding: 0;
@@ -190,5 +219,17 @@
   margin-right: 6%;
   margin-top: 2%;
   color: $app-light;
-  font-size: 3em
+  font-size: 3em;
+
+
+  &:hover {
+    cursor: pointer;
+  }
 }
+
+#indicator-conainer {
+  @media only screen and (min-width : 820px) {
+    margin-left: -15%;
+  }
+
+  }

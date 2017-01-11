@@ -7,20 +7,45 @@
 
 .quotes-container {
   height: 100%;
-  width: 80%;
-  margin-left: 10%;
+  margin: 0 auto;
+  margin-left: auto;
+  margin-right: auto;
+  display: block;
   margin-top: 12%;
+  width: 70%;
+}
+
+.quote-pair {
+  width: 100%;
+  margin-top: 10%;
+  margin-left: -22px;
+  display: block;
+
+  @media only screen and (min-width : 820px) {
+    display: inline-flex;
+  }
+
+}
+
+.quote-el-conteiner {
+  width: 95%;
+  margin-left: 27px;
+
+  @media only screen and (min-width : 820px) {
+    width: 44%;
+  }
 }
 
 .quotes-para {
-  width: 100%;
-  margin-top: 10%;
   text-align: left;
-  font-size: 1.2em;
+  font-size: 1.3em;
+
+  @media only screen and (min-width : 820px) {
+    font-size: 1.6em;
+  }
 }
 
 .quotes-info {
-  width: 100%;
   text-align: right;
   font-size: 1em;
   font-style: italic;

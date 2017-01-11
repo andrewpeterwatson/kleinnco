@@ -94,6 +94,10 @@
   font-size: 1.8em;
   z-index: 5;
 
+  &:hover {
+    cursor: pointer;
+  }
+
 }
 
 .home-bg-placeholder {
@@ -190,12 +194,19 @@
 
 .home-working {
   height: auto;
-  width: 324%;
+  width: 300%;
   float: right;
-  margin-right: -80%;
-  margin-top: 0px;
+  margin-right: -77%;
+  margin-top: 27%;
 
 
+
+  @media only screen and (min-width : 320px) {
+    width: 375%;
+    margin-right: -100%;
+    margin-top: 25%;
+
+  }
 
   @media only screen and (min-width : 820px) {
     margin-top: 0%;
@@ -264,4 +275,48 @@
 .parallax-layer-back {
   margin-left: -1%;
   transform: translateZ(-1px) scale(2);
+}
+
+.scroll-down-arrow {
+  position: absolute;
+  bottom: 10px;
+  width: 100vw;
+  height: 41px;
+  z-index: 1;
+
+  @media only screen and (min-width : 820px) {
+    bottom: 29px;
+  }
+}
+.scroll-down-arrow-circle {
+  width: 45px;
+  height: 45px;
+  margin-left: 40vw;
+  border: 2.5px $app-light-trans solid;
+  border-radius: 32px;
+  color: $app-light-trans;
+  z-index: 1;
+  display: inline-block;
+
+  &:hover {
+    border-color: $app-light;
+    color: $app-light;
+  }
+
+
+  @media only screen and (min-width : 820px) {
+    margin-left: 47vw;
+  }
+}
+
+.fa-angle-down {
+  font-size: 3em;
+  margin-left: 7px;
+}
+
+#home-scroll {
+  display: inline-block;
+  margin-left: 3px;
+  font-size: 2em;
+  color: $app-light-trans;
 }

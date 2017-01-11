@@ -9,24 +9,29 @@
 
 .info-mission-container {
   position: relative;
-  width: 80%;
-  margin-left: 10%;
-  margin-top: 70px;
-  height: 325px;
+  width: 67%;
+  margin-left: 16.75%;
+  margin-top: 56px;
+  height: 385px;
   text-align: center;
   border-top: 1px solid grey;
   border-bottom: 1px solid grey;
 
   @media only screen and (min-width : 820px) {
-    // margin-top: 10%;
+    height: 325px;
+    margin-top: 70px;
   }
 }
 
 #info-mission-el {
   // position: absolute;
-  font-size: 1.3em;
+  font-size: 1.2em;
   margin-top: 10%;
   font-weight: bold;
+
+  @media only screen and (min-width : 820px) {
+    margin-top: 68px;
+  }
 }
 
 #info-meet-us {
