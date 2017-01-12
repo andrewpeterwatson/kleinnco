@@ -24,7 +24,7 @@ angular.module('kleinnco', [ngRoute])
     controllerAs: 'aboutCtrl'
   })
   .when('/additional-clients', {
-    template: require('./view/additional-client-page.html'),
+    template: require('./view/additional-client-page/add-client-page.html'),
     controller: 'AdditionalClientsController',
     controllerAs: 'addCtrl'
   })
@@ -45,4 +45,4 @@ require('./component/contact');
 require('./component/buzz-words');
 require('./component/quotes');
 require('./component/about-page');
-// require('./component/footer');
+require('./component/additional-clients');
