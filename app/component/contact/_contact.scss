@@ -26,7 +26,7 @@
 #contact-logo {
   width: 80%;
   height: 100px;
-  margin-top: 152px;
+  margin-top: 55px;
   margin-left: 10%;
   font-size: 2.5em;
   text-align: left;
@@ -38,16 +38,53 @@
   }
 }
 
-.contact-arrow {
-  position: absolute;
-  margin-left: 46%;
-  font-size: 3em;
+// .contact-arrow {
+//   position: absolute;
+//   margin-left: 46%;
+//   font-size: 3em;
+//
+//   a {
+//     text-decoration: none;
+//     color: $app-light;
+//   }
+// }
 
-  a {
-    text-decoration: none;
+.scoll-top-arrow {
+  position: absolute;
+  width: 100vw;
+  height: 41px;
+}
+
+.scroll-top-arrow-circle {
+  width: 45px;
+  height: 45px;
+  border: 2.5px $app-light-trans solid;
+  border-radius: 32px;
+  margin-left: 45vw;
+  margin-top: 25px;
+  color: $app-light-trans;
+  display: inline-block;
+
+  &:hover {
+    border-color: $app-light;
     color: $app-light;
   }
 }
+
+.fa-angle-up {
+  font-size: 3em;
+  margin-top: -3px;
+  margin-left: 7.5px;
+}
+
+#top-scroll {
+  display: inline-block;
+  margin-left: 3px;
+  font-size: 2em;
+  color: $app-light-trans;
+}
+
+
 
 .contact-ul {
   margin: 0;
