@@ -23,6 +23,11 @@ angular.module('kleinnco', [ngRoute])
     controller: 'AboutPageController',
     controllerAs: 'aboutCtrl'
   })
+  .when('/additional-clients', {
+    template: require('./view/additional-client-page.html'),
+    controller: 'AdditionalClientsController',
+    controllerAs: 'addCtrl'
+  })
   .otherwise({
     redirectTo: '/home'
   });
@@ -32,6 +37,7 @@ angular.module('kleinnco', [ngRoute])
 // angular controllers
 require('./view/home/index.js');
 require('./view/about-page/index.js');
+require('./view/additional-client-page/index.js');
 require('./component/intro');
 require('./component/our-work');
 require('./component/info');
