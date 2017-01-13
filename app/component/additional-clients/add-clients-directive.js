@@ -19,7 +19,7 @@ function AdditionalClientsController($location) {
       link: 'http://shopbevara.com/'},
     { name: 'Egencia, an Expedia Inc. Company',
       link: 'https://www.egencia.com/public/us/'},
-    { name: 'EMC2',
+    { name: 'EMC',	
       link: 'https://www.emc.com/en-us/index.htm'},
     { name: 'Equinix',
       link: 'http://www.equinix.com/'},

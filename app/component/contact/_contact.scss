@@ -155,11 +155,18 @@
 
 }
 
+#footer-el-first {
+  margin-left: 2%;
+  @media only screen and (min-width : 820px) {
+  margin-left: 40%;
+}
+}
+
 .contact-footer-icon-els {
   margin-top: 10px;
 
   @media only screen and (min-width : 820px) {
-    margin-left: 30%;
+    margin-left: 12%;
   }
 }
 
