@@ -1,4 +1,9 @@
 <main class="addition-clients">
-  <p>clients here</p>
+  <img class="about-klein-logo" ng-click="aboutCtrl.goHome()" src="../../assets/images/kleinco-final-black.png" alt="klein and co logo" />
+  <p id="add-quote">“It’s not my job to be right but to get the job done right.”</p>
+
+  <ul>
+    <li class="clients" ng-repeat="clients in addCtrl.addClients"><a href="{{clients.link}}" target="_blank">{{clients.name}}</li></a>
+  </ul>
 
 </main>
