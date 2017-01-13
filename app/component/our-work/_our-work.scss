@@ -9,7 +9,7 @@
 .work-clients-container {
   margin-top: 90px;
     @media only screen and (min-width : 820px) {
-      margin-top: 190px;
+      margin-top: -55px;
     }
 }
 
@@ -38,6 +38,7 @@
   @media only screen and (min-width : 820px) {
     margin: 5%;
     margin-left: 10%;
+    margin-top: 150px;
     border: 0;
     display: inline-block;
     width: 30%;
@@ -61,12 +62,7 @@
     font-weight: bold;
   }
 }
-// .work-client-name-alone:hover .work-hidden {
-//   display:block;
-// }
-// .work-client-name-alone:hover .work-clients-alone-els {
-//   display: none;
-// }
+
 
 .work-clients-alone-els {
   margin: 0 auto;
@@ -233,3 +229,14 @@
   }
 
   }
+
+
+#work-add-clients {
+  text-align: center;
+  font-size: 1.7em;
+
+  &:hover {
+    cursor: pointer;
+    color: $app-dark-trans
+  }
+}

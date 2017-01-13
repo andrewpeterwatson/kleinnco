@@ -1,0 +1,123 @@
+@import "_theme";
+.additional-clients {
+  height: 100%;
+  width: 100%;
+}
+
+.add-img-container {
+  position: relative;
+  width: 100vw;
+  height: 300px;
+  overflow: hidden;
+  background-color: #021c50;
+}
+.add-header-image {
+  position: absolute;
+  width: 320%;
+
+  @media only screen and (min-width : 710px) {
+    width: 100%
+  }
+}
+.color-overlay {
+  position: absolute;
+  height: 100%;
+  width: 100%;
+  background-color: $app-dark-trans
+}
+
+#add-quote {
+  position: absolute;
+  width: 296px;
+  right: 12px;
+  font-size: 2.4em;
+  font-weight: bold;
+  margin-top: -115px;
+  color: white;
+
+  @media only screen and (min-width : 710px) {
+    width: 412px;
+    right: 20px;
+    font-size: 3em;
+    margin-top: -102px;
+  }
+}
+
+.add-klein-logo {
+  position: absolute;
+  top: 0;
+  margin: 8px;
+  width: 150px;
+
+    &:hover {
+      cursor: pointer;
+    }
+}
+
+
+.add-ul-container {
+  width: 100vw;
+  margin-top: 11vh;
+}
+
+
+
+.add-client-ul {
+  padding: 0;
+  column-count: 1;
+  width: 80vw;
+  text-align: center;
+  margin-left: auto;
+  margin-right: auto;
+
+    @media only screen and (min-width : 710px) {
+      text-align: left;
+      width: 698px;
+      column-count: 2
+    }
+
+}
+
+.client-li {
+  list-style: none;
+  width: 296px;
+  font-size: 1.7em;
+  margin-left: auto;
+  margin-right: auto;
+
+  a {
+      color: black ;
+    }
+}
+
+.not-linked-clients {
+  color: black;
+  font-weight: bold;
+}
+
+.linked-clients {
+  font-weight: normal;
+
+
+  a {
+    &:hover {
+      cursor: pointer;
+      color: $app-dark-trans;
+      text-decoration: none;
+    }
+    &:focus {
+      text-decoration: none;
+    }
+  }
+}
+
+.add-footer-legal {
+  width: 65%;
+  margin-left: 16%;
+  margin-top: 32vh;
+}
+
+#add-footer-legal-h3 {
+  font-size: 1em;
+  text-align: center;
+}
