@@ -1,0 +1,23 @@
+<main class="additional-clients">
+
+  <div class="add-img-container">
+    <img class="add-header-image" src="../../assets/images/trophies-small.jpg" alt="K&amp;CO Logo" />
+    <div class="color-overlay"></div>
+  </div>
+
+
+  <img class="add-klein-logo" ng-click="addCtrl.goHome()" src="../../assets/images/kleinco-final-white.png" alt="klein and co logo" />
+  <h2 id="add-quote">“It’s not my job to be right, <br> but to get the job done right.”</h2>
+
+<div class="add-ul-container">
+  <ul class="add-client-ul">
+    <li class="client-li linked-clients" ng-repeat="clients in addCtrl.addClients"><a href="{{clients.link}}" target="_blank">{{clients.name}}</li></a>
+    <li class="client-li" class="not-linked-clients">HecklerSports.com</li>
+  </ul>
+</div>
+
+
+<div class="add-footer-legal">
+  <h3 id="about-footer-legal-h3">&copy; 2016 kleinnco | Consulting Creativity | website by <a href="mailto:andrewpeterwatson@gmail.com">NORTHMORE Creative</a> </h3>
+</div>
+</main>

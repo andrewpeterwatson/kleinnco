@@ -6,15 +6,19 @@ angular.module('kleinnco')
   return {
     restrict: 'E',
     template: require('./_our-work.html'),
-    controller: [OurWorkController],
+    controller: ['$location', OurWorkController],
     controllerAs: 'ourWorkCtrl',
     bindToController: true,
     scope: {}
   };
 
-  function OurWorkController() {
-
+  function OurWorkController($location) {
     const clientInfo = require('json!../../data/our-work-data.json');
+
+    this.addClients = function() {
+      $location.path('/additional-clients')
+    }
+
     this.currentClient = clientInfo;
 
     this.currentIndex = 0;
@@ -48,4 +52,5 @@ angular.module('kleinnco')
     };
   }
 }
+
 );

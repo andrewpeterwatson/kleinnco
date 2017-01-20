@@ -36,7 +36,7 @@
   width: 99px;
   height: 54px;
   font-size: 3em;
-  margin-top: -180px;
+  margin-top: -7px;
   text-align: center;
   border-bottom: 1px solid grey;
 
@@ -46,25 +46,24 @@
 
   @media only screen and (min-width : 820px) {
     font-size: 6em;
-    height: 100px;
+    height: 115px;
     width: 194px;
+    margin-top: -10px;
   }
 }
 .bw-desc {
-  position: absolute;
   font-size: 1em;
   width: 60%;
   height: 191px;
-  margin-top: 36px;
+  margin-top: 0px;
   text-align: center;
   text-align: center;
   color: grey;
 
 
   @media only screen and (min-width : 820px) {
-    margin-top: 65px;
     font-size: 1.3em;
-    width: 420px;
+    width: 450px;
   }
 
   @media only screen and (min-width : 1160px) {
