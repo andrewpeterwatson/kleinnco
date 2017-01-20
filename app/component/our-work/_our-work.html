@@ -1,6 +1,9 @@
 <div class="our-work">
+  <div class="add-clients-container">
+    <h2 id="work-add-clients" ng-click="ourWorkCtrl.addClients()">Additional Clients</h2>
+  </div>
 <div class="work-clients-container" ng-show="!ourWorkCtrl.showWorkGallery">
-    <div class="work-client-name-alone" ng-click="ourWorkCtrl.showWorkGalleryAt(0)">
+    <div class="work-client-name-alone" id="work-client-name-first" ng-click="ourWorkCtrl.showWorkGalleryAt(0)">
       <img class="work-clients-alone-els" src="../../assets/logos/novartis-black.png" alt="Novartis" />
     </div>
     <div class="work-client-name-alone" ng-click="ourWorkCtrl.showWorkGalleryAt(1)">
@@ -40,6 +43,4 @@
     </div>
   </div>
 </div>
-
-  <h2 id="work-add-clients" ng-click="ourWorkCtrl.addClients()">Additional Clients</h2>
 </div>

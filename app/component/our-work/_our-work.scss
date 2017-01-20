@@ -45,6 +45,10 @@
   }
 }
 
+#work-client-name-first {
+  margin-top: 0;
+}
+
 .work-hidden {
   position: absolute;
   display: none;
@@ -230,7 +234,12 @@
 
   }
 
-
+.add-clients-container {
+  position: absolute;
+  width: 100vw;
+  height: 61px;
+  margin-top: 900px;
+}
 #work-add-clients {
   text-align: center;
   font-size: 1.7em;
