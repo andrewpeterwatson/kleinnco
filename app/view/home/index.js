@@ -18,7 +18,9 @@ function HomeController($log, $location, $anchorScroll){
         $location.path('/about')
     }
 
-    this.scrollTo = function (id) {
-     $anchorScroll(id);
-   }
+    this.scrollTo = function(id) {
+      console.log('scroll in');
+        $location.hash(id);
+        $anchorScroll();
+     }
 }
