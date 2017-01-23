@@ -19,7 +19,6 @@ function HomeController($log, $location, $anchorScroll){
     }
 
     this.scrollTo = function(id) {
-      console.log('scroll in');
         $location.hash(id);
         $anchorScroll();
      }

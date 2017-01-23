@@ -4,9 +4,9 @@
   <i class="fa fa-bars" ng-click="homeCtrl.showNav = !homeCtrl.showNav"  aria-hidden="true"></i>
 </div>
   <div class="home-mobile-nav" ng-if="homeCtrl.showNav">
-    <button id="nav-mobile-values" class="home-nav-mobile-btn" type="button" name="button"><a href="#values" target="_self">values</a></button>
-    <button id="nav-mobile-clients" class="home-nav-mobile-btn" type="button" name="button"><a href="#clients" target="_self">our clients</a></button>
-    <button id="nav-mobile-wins" class="home-nav-mobile-btn" type="button" name="button"><a href="#wins" target="_self">love</a></button>
+    <button id="nav-mobile-values" class="home-nav-mobile-btn" type="button" name="button"><a ng-click="homeCtrl.scrollTo('values')">values</a></button>
+    <button id="nav-mobile-clients" class="home-nav-mobile-btn" type="button" name="button"><a ng-click="homeCtrl.scrollTo('clients')">our clients</a></button>
+    <button id="nav-mobile-wins" class="home-nav-mobile-btn" type="button" name="button"><a ng-click="homeCtrl.scrollTo('wins')">love</a></button>
     <button id="nav-mobile-about" class="home-nav-mobile-btn" type="button" name="button"><a ng-click="homeCtrl.aboutGo()">me</a></button>
 
       <div class="close-nav" ng-click="homeCtrl.closeNav()"><p>x</p></div>
@@ -35,13 +35,13 @@
               <a ng-click="homeCtrl.aboutGo()"  id="nav-about" class="home-nav-btn">me</a>
             </li>
             <li class="home-desk-nav-els">
-              <a href="#wins" target="_self" id="nav-wins" class="home-nav-btn">love</a>
+              <a ng-click="homeCtrl.scrollTo('wins')" id="nav-wins" class="home-nav-btn">love</a>
             </li>
             <li class="home-desk-nav-els">
-              <a href="#clients" target="_self" id="nav-clients" class="home-nav-btn">clients</a>
+              <a ng-click="homeCtrl.scrollTo('clients')" id="nav-clients" class="home-nav-btn">clients</a>
             </li>
             <li class="home-desk-nav-els">
-              <a href="#values" target="_self" id="nav-values" class="home-nav-btn">values</a>
+              <a ng-click="homeCtrl.scrollTo('values')" id="nav-values" class="home-nav-btn">values</a>
             </li>
           </ul>
         </div>
